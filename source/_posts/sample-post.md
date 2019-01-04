@@ -1,7 +1,12 @@
 ---
 title: Welcome to the NexT Organization!
-date: 2019-01-03 23:37:15
+date: 2019-01-03T18:25:15.000Z
+updated: 2019-01-03T18:26:00.000Z
+category:
+  - general
 tags:
+  - next document
+comments: false
 ---
 «[NexT]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
 
