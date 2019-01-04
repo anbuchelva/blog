@@ -695,8 +695,8 @@ leancloud_visitors:
 firestore:
   enable: false
   collection: articles #required, a string collection name to access firestore database
-  apiKey: #AIzaSyCtDL9ExS-zFMmNzSH9Ql651hktghcvImc
-  projectId: #anbu-blog
+  apiKey: #
+  projectId: #
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
 # Show Views/Visitors of the website/page with busuanzi.
