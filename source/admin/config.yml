@@ -4,14 +4,18 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "source/images" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    cloud_name: next-blog-test
+    api_key: 119334758433426
+    username: vqkm5swm@proto2mail.com
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
     folder: "source/_posts" # The path to the folder where the documents are stored
-    sort: "date:desc"
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -21,7 +25,6 @@ collections:
       - {label: "Categories", name: "category", required: true, widget: "list"}
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
-      #- {label: "TOC", name: "toc", required: false, widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
 
