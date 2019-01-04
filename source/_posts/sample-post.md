@@ -3,11 +3,11 @@ title: Welcome to the NexT Organization!
 date: 2019-01-03 23:37:15
 tags:
 ---
-«[NexT][docs]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
+«[NexT]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
 
 ### User Guide
 
-It's easy to set up NexT theme. Just follow [documentation][] and create your personal website!
+It's easy to set up NexT theme. Just follow documentation and create your personal website!
 
 ### Feedback
 
@@ -19,8 +19,6 @@ It's easy to set up NexT theme. Just follow [documentation][] and create your pe
 * Follow us with [Telegram Channel][t-news-url] for latest news.
 
 [Hexo]: https://hexo.io
-[docs]: /docs/
-[documentation]: /docs/getting-started/
 [stack-url]: https://stackoverflow.com/questions/tagged/theme-next
 [contributing-url]: https://github.com/theme-next/hexo-theme-next/blob/master/.github/CONTRIBUTING.md
 [feat-req-vote-url]: https://github.com/theme-next/hexo-theme-next/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc
