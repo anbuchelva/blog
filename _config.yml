@@ -13,7 +13,7 @@ timezone: Asia/Kolkata
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: https://next-blog-test.netlify.com/
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+admin: source/admin
 
 # Writing
 new_post_name: :title.md # File name of new posts
