@@ -1,6 +1,7 @@
 ---
 title: Welcome to the NexT Organization!
 date: 2019-01-03T18:25:15.000Z
+updated: 2019-01-03T18:26:00.000Z
 category:
   - general
 tags:
