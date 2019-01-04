@@ -14,9 +14,3 @@
 [context.branch-deploy]
   command = "hexo clean && hexo g && npm run netlify-cms"
   publish = "public/"
-
-[[redirects]]
-  from = "/Gernal"
-  to = "/general"
-  status = 301
-  force = false
