@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Test Blog
-subtitle: Subtitle here
-description: description here
-keywords: keywords here
-author: Author Name
+title: anbuchelva's blog
+subtitle: Logging about 'The Simplest Things That Could Possibly Work'
+description: an EPM Consultant and an Android Enthusiast
+keywords: EPM, Essbase, Hyperion, Planning, Profitability and Cost Management, Hexo, Blog, CI, Travis, Netlify, Anbuselvan, Palaniyandi, Power BI
+author: Anbuselvan Palaniyandi
 language: en
 timezone: Asia/Kolkata
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://next-blog-test.netlify.com/
+url: https://blog.anbuchelva.in
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -23,11 +23,10 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
+category_dir: /
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-admin: source/admin
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -115,3 +114,8 @@ filter_optimize:
 
 sitemap:
     path: sitemap.xml
+
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
