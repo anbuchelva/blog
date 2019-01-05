@@ -73,7 +73,7 @@ footer:
     color: "#BB0000"
 
   # If not defined, `author` from Hexo main config will be used.
-  copyright: # made with love by Anbuselvan
+  copyright: made with love by Anbuselvan
   # -------------------------------------------------------------
   powered:
     # Hexo link (Powered by Hexo).
@@ -95,15 +95,14 @@ footer:
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
-
+  custom_text: All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/share-your-work/licensing-types-examples
 # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: true
+  post: false
 
 
 # ---------------------------------------------------------------
