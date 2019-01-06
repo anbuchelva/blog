@@ -4,7 +4,7 @@
   environment = {NODE_ENV = "8.10.0"}
 
 [context.production]
-  command = "hexo clean && hexo g && npm run netlify-cms"
+  command = "hexo clean && hexo g && npm run netlify-cms && npm run firebase-deploy"
   publish = "public/"
 
 [context.deploy-preview]
