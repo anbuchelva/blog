@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /android/
+Allow: /blog/
+Allow: /general/
+Allow: /hyperion/
+Allow: /virtualbox/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /page/ 
+Disallow: /admin/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /lib/
+Sitemap: https://blog.anbuchelva.in/sitemap.xml
