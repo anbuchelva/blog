@@ -3,7 +3,7 @@ title: Power BI - steps to connect Essbase using Essbase Connector (beta)
 date: 2018-12-20T18:13:29.393Z
 updated: 2018-12-20T18:13:29.393Z
 category:
-  - hyperion
+  - Hyperion
 tags:
   - hyperion
   - power bi
