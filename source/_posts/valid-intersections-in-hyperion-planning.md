@@ -3,7 +3,7 @@ title: Valid Intersections in Hyperion Planning
 date: 2018-06-03T10:52:36.964Z
 updated: 2018-06-03T10:52:36.964Z
 category:
-  - hyperion
+  - Hyperion
 tags:
   - hyperion planning
   - classic planning

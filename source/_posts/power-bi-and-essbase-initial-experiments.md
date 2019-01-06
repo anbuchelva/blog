@@ -3,7 +3,7 @@ title: Power BI and Essbase - Initial Experiments
 date: 2018-12-23T19:18:37.727Z
 updated: 2018-12-23T19:18:37.727Z
 category:
-  - hyperion
+  - Hyperion
 tags:
   - power bi
   - essbase
