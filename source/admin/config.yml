@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github # Or gitlab
+  repo: anbuchelva/blog # Your username and repository
   branch: source # Branch to update (optional; defaults to master)
+  base_url: https://us-central1-anbu-blog.cloudfunctions.net # The base URL for your Firebase Function
+  auth_endpoint: /oauth/auth # The path to the OAuth endpoint of the function
 
 publish_mode: editorial_workflow
 
