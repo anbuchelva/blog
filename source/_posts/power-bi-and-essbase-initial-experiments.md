@@ -14,7 +14,7 @@ keywords:
   - Connector
   - Connector
 ---
-Please go through my previous post that explains [how to connect Essbase with Power BI using the Essbase (beta) connector](hyperion/power-bi-steps-to-connect-essbase-using-essbase-connector-beta/), if you are getting your hands in the first time.
+Please go through my previous post that explains [how to connect Essbase with Power BI using the Essbase (beta) connector](/hyperion/power-bi-steps-to-connect-essbase-using-essbase-connector-beta/), if you are getting your hands in the first time.
 
 I have tried connecting to two different ASO cubes and share how Essbase reacts while creating a new model in Power-BI.
 
