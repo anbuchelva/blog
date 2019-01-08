@@ -14,7 +14,7 @@ keywords:
   - private repositories
 comments: true
 ---
-Starting Today GitHub offers unlimited free repositories, which is a long expected one as the competitors  like GitLab and BitBucket are already doing it.
+Starting today [GitHub](https://github.com/) offers unlimited free repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
 
 Since Microsoft acquired GitHub last year, I expected this change.  However, the business model might affect if they do it, as most of the projects hosted in GitHub compared to the competitors.
 
@@ -26,7 +26,7 @@ There will be Pros and Cons on this change.
 
 Creating new repository has an option to choose between Private and Public, which is very simple.
 
-To make an existing repo private, go to {% label @Settings %} of the repository and scroll to the bottom / {% label @Danger Zone %}, where you will see the option to make the repository private.
+To make an existing repo private, go to {% label @Settings %} of the repository and scroll to the bottom where the {% label @Danger Zone %} exists and select the option to make the repository private.
 
 ![github_Private_repo_danger_zone](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_danger_zone.png)
 
@@ -46,7 +46,7 @@ There are few things to notice, when the repos are made private.
 
 #### Data Services
 
-First The github doesn't access your repo, so there won't be any audit done.  Vulnerability alers are disabled when the repo is private, unless read-only access is given to the repo.
+First thing to notice when the repo is private github stop accessing it unless you give persission. So there won't be any audit done on the codes; vulnerability alers are disabled. Providing read-only access would solve the issue.
 
 ![github_Private_repo_data_services](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_data_services.png)
 
@@ -58,12 +58,12 @@ Github Wikis will not be enabled for private repos, unless pro version is puchas
 
 #### GitHub Pages
 
-Github pages won't work on private repos, either it should be public or the pro version should be purchased.
+Github pages won't work on private repos, either the repository to be public or the pro version should be purchased.
 
 ![github_Private_repo_github_pages](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_github_pages.png)
 
 {% note warning %}
-If there is any static website hosted on github repo, the content and the images of the repo / {% label @gh-pages %} branch become private and won't be accessible.
+If there is any static website hosted on github repo, the content and the images of the repo become private and won't be accessible.
 {% endnote %}
 
 ### Make it Public Again
@@ -75,7 +75,7 @@ The Process is same. Visit the {% label @Settings %} of the repo, then {% label 
 ### The Pros and Cons
 
 * The change is very much expected for a long time, as people may want to hide their important projects from prying eyes.
-* Since GitHub hosts most of the project and an user need not to switch between different providers for having private repos free.
+* Since GitHub hosts most of the project and an user need not to switch between different providers for having private repos for free.
 * Small organizations would benefit from this change as they can have free private repos with unlimited users.
 
 It might have negative impact on the growing developers,
