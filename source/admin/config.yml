@@ -8,9 +8,9 @@ media_library:
   name: cloudinary
   output_filename_only: false
   config:
-    cloud_name: next-blog-test
-    api_key: 119334758433426
-    username: vqkm5swm@proto2mail.com
+    cloud_name: anbuchelva
+    api_key: 483245888948954
+    username: anbuchelva@gmail.com
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
