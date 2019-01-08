@@ -64,7 +64,7 @@ Github pages won't work on private repos, either it should be public or the pro 
 
 {% note warning %}
 If there is any static website hosted on github repo, the content and the images of the repo / {% label @gh-pages %} branch become private and won't be accessible.
-{% end note %}
+{% endnote %}
 
 ### Make it Public Again
 
