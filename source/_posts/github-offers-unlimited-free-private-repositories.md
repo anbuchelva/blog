@@ -14,7 +14,7 @@ keywords:
   - private repositories
 comments: true
 ---
-Starting today [GitHub](https://github.com/) offers unlimited free repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
+Starting today [GitHub](https://github.com/) offers unlimited free private repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
 
 Since Microsoft acquired GitHub last year, I expected this change.  However, the business model might affect if they do it, as most of the projects hosted in GitHub compared to the competitors.
 
