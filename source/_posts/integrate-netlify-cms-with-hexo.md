@@ -57,12 +57,12 @@ There would be few lines of codes to be added in {% label @<head> %} and {% labe
 There are multiple ways to do it, I prefer the easiest way by updating it in the netlify settings.  Go to https://app.netlify.com/ select your project name > Site Settings > Build & Deploy > Post processing > Snippet injection > Add Snippet, then add the following codes in Head and Body sections.
 
 ##### Head Section
-{% code block %}
+{% code %}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{% endcodeblock %}
+{% endcode %}
 
 ##### Body Section
-{% code block %}
+{% code %}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -74,7 +74,7 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
     });
   }
 </script>
-{% endcodeblock %}
+{% endcode %}
 
 The outcome should look like this, if you have used the 3rd option.
 
@@ -100,7 +100,7 @@ Create a folder called {% label @admin %} under the source folder and create two
 ##### Index.html
 This file is used for displaying the content management system.  There is no changes required on the existing code; copy the following and put it in {% label @index.html %} file.
 
-{% code block %}
+{% code %}
 ---
 layout: false
 ---
@@ -116,7 +116,7 @@ layout: false
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
-{% endcodeblock %}
+{% endcode %}
 
 {% note info %}
 You may change the title of the CMS page similar to your website, instead of 'Content Manager'
@@ -125,7 +125,7 @@ You may change the title of the CMS page similar to your website, instead of 'Co
 #### config.yml
 This file is used to configure the {% label @Front Matter %} of the blog posts.  There are few modifications needed on the code, based on your requirement.
 
-{% code block %}
+{% code %}
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -150,6 +150,6 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-{% endcodeblock %}
+{% endcode %}
 
 refer the following table to understand the each of the parameter.
