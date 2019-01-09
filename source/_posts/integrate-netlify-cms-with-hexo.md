@@ -59,7 +59,7 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
 ##### Head Section
 {% code block %}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{% endblock %}
+{% endcodeblock %}
 
 ##### Body Section
 {% code block %}
@@ -74,7 +74,7 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
     });
   }
 </script>
-{% endblock %}
+{% endcodeblock %}
 
 The outcome should look like this, if you have used the 3rd option.
 
@@ -116,7 +116,7 @@ layout: false
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
-{% endblock %}
+{% endcodeblock %}
 
 {% note info %}
 You may change the title of the CMS page similar to your website, instead of 'Content Manager'
@@ -150,6 +150,6 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-{% endblock %}
+{% endcodeblock %}
 
 refer the following table to understand the each of the parameter.
