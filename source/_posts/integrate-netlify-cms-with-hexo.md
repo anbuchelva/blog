@@ -89,19 +89,19 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
 
 The outcome should look like this.
 
-![netlify_snippet_injection]()
+![netlify_snippet_injection](https://res.cloudinary.com/anbuchelva/image/upload/v1547140285/images/netlify-cms/netlify_snippet_injection.png)
 
 #### Enable Netlify Identity
 Netlify Identity Services to be enabled for adding users and to enable authentication to them.  Go to {% label @Settings %} > {% label @Identity %} > {% label @Enable Identity %}
 
 You may add Github / GitLab / BitBucket / Google as external providers, if you or your users want to login any of these services for writing posts.
 
-![netlify_identity_external_providers](<>)
+![netlify_identity_external_providers](https://res.cloudinary.com/anbuchelva/image/upload/v1547140145/images/netlify-cms/netlify_identity_external_providers.png)
 
 #### Enable Git Gateway
 Git Gateway connects the site to the git provider's API. This should be enabled in the {% label @Identity %} > {% label @Services %} section.
 
-![netlify_git_gateway]()
+![netlify_git_gateway](https://res.cloudinary.com/anbuchelva/image/upload/v1547140429/images/netlify-cms/netlify_git_gateway.png)
 
 ### Modify the Site Contents
 There would be small changes required in the site contents, which would help to setup the [Front-matter](https://hexo.io/docs/front-matter).
@@ -109,7 +109,7 @@ There would be small changes required in the site contents, which would help to 
 #### Configure CMS Admin Panel
 Create a folder called {% label @admin %} under the source folder and add the following two files in it.
 
-![netlify_admin_folder](<>)
+![netlify_admin_folder](https://res.cloudinary.com/anbuchelva/image/upload/v1547141203/images/netlify-cms/netlify_admin_folder.png)
 
 ##### index.html
 This file is used for displaying the content management system. Copy the following code and put it in {% label @index.html %} file, without making any changes.
