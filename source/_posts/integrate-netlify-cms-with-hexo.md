@@ -60,7 +60,7 @@ The following steps to be enabled for enabling Netlify-CMS.
 3. [Enable Git Gateway](#enable-git-gateway)
 4. [Configure CMS admin panel](#configure-cms-admin-panel)
 5. [Build Site without Bug](#building-sites)
-6. [Cloudinary as CDN for media](#use-cloudinary-as-media-folder) {% label @optional %}
+6. [Cloudinary as CDN for media](#use-cloudinary-as-media-folder)
 
 #### Update `<head>` and `<body>` tags
 There would be few lines of codes to be added in `<head>` and `<body>` sections, in order to enable Identity services.
@@ -177,10 +177,10 @@ I have tried explaining each part of the above code, which may helpful.
 | public_folder | This is where the images are available after building the site. The default folder for hexo is located at `/images` |
 | collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  You can keep the source code without any changes, which works well for almost all the hexo themes.  You may add additional collections based on the requirement. |
 
->Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
+Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
 
 {% note warning %}
-This is applicable only for Github.  GitLab and BitBucket works differently.
+Editorial Workflow i.e., creating a pull request / merging it back is applicable only for Github.  GitLab and BitBucket works differently.
 {% endnote %}
 
 #### Building Sites
@@ -235,7 +235,7 @@ You can add build commands in the Site settings of Netlify page.  However, you m
 This file would override the settings, that you mention in the netlify setting page.
 
 #### Use Cloudinary as media folder
-{% note default %}This is optional.{% endnote %}
+{% note default %}This section is optional one.{% endnote %}
 Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others. So, I would suggest using http://cloudinary.com for hosting the site images.
 
 You need to create a free account from cloudinary and get the required details from the dashboard page.  Then configure the `source/admin/config.yml` file as like below; refer lines between 7 and 13.
