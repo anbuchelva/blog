@@ -25,7 +25,8 @@ The people who setup static websites falls in the first two categories.
 
 I feel there should be a medium to write something like a paper, notebook, diary to convert a thought that flash in our mind to a blog post.  When the {% label @gap %} increases in converting a thought into writing, probably it will never be written. The medium is the main obstacle that reduces the frequency of blog posts and makes to zero at the end.
 
-I started writing in this blog in a text editor, push it to git.  The main obstacle is that I have to write it only on my personal computer, where git installed.  When I don't have a computer with git installed, the {% label @gap %} increases.  I want to get rid of this.
+I started writing in this blog in a text editor, push it to git.  The main obstacle is that, I have to write it only on my personal computer, where git installed.  When I don't have a computer with git installed, the {% label @gap %} increases.  I want to get rid of this.
+
 Found [Netlify-CMS](https://www.netlifycms.org/) as the better alternate to write blog posts, preview then publish.
 
 <!---more--->
@@ -93,12 +94,12 @@ The outcome should look like this.
 #### Enable Netlify Identity
 Netlify Identity Services to be enabled for adding users and to enable authentication to them.  Go to {% label @Settings %} > {% label @Identity %} > {% label @Enable Identity %}
 
-You may add Github / GitLab / BitBucket / Google as external providers.
+You may add Github / GitLab / BitBucket / Google as external providers, if you or your users want to login any of these services for writing posts.
 
 ![netlify_identity_external_providers](<>)
 
 #### Enable Git Gateway
-Git Gateway connects the site to the git provider's API. This should be enabled in the Identity > Services section.
+Git Gateway connects the site to the git provider's API. This should be enabled in the {% label @Identity %} > {% label @Services %} section.
 
 ![netlify_git_gateway]()
 
@@ -132,7 +133,7 @@ layout: false
 {% endcode %}
 
 {% note warning %}
-the layout should be set as false, so that it will not interfere with the site's CSS setup.
+The layout should be set as false, so that it will not interfere with the site's CSS setup.
 {% endnote %}
 
 ##### config.yml
@@ -171,26 +172,22 @@ I have tried explaining each part of the above code, which may helpful.
 | - | - |
 | `name` | Keep it default as `git-gateway` unless you want to enable [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/) |
 | `branch` | Update the {% label danger @branch %} name where the site contents / source code is saved. |
-| publish_mode:  editorial_workflow | Refer this [link](/https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. 
-Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
-| media_folder | This is where the images are stored in the source of the site. 
-The default folder for hexo is located at `source/images` |
-| public_folder | This is where the images are available after building the site. 
-The default folder for hexo is located at `/images` |
-| collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  
-You can keep the source code without any changes, which works well for almost all the hexo themes.  
-You may add additional collections based on the requirement. |
+| publish_mode:  editorial_workflow | Refer this [link](/https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
+| media_folder | This is where the images are stored in the source of the site. The default folder for hexo is located at `source/images` |
+| public_folder | This is where the images are available after building the site. The default folder for hexo is located at `/images` |
+| collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  You can keep the source code without any changes, which works well for almost all the hexo themes.  You may add additional collections based on the requirement. |
 
-{% note info %}
-Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
+>Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
 
-{% label warning @This is applicable only for Github %}.  GitLab and BitBucket works differently.{% endnote %}
+{% note warning %}
+This is applicable only for Github.  GitLab and BitBucket works differently.
+{% endnote %}
 
 #### Building Sites
 You might have used `hexo g` or `hexo generate` command to build the site. Though, the CMS wouldn't load.  Refer the following portion that fixes a bug.
 
 ##### Fixing Bug in config.yml
-I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the `source/admin/**config.yml**` is renamed as `public/admin/**config.json**` with some modification after building the site. So I had to copy this file from `source/admin/config.yml` as  `public/admin/config.yml`. I had to do this step once Netlify CI build the site.
+I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the `source/admin/config.yml` is renamed as `public/admin/config.json` with some modification after building the site. So I had to copy this file from `source/admin/config.yml` as  `public/admin/config.yml`. I had to do this step once Netlify CI build the site.
 
 So, I have put this code in the `package.json` file as {% label @script %}. Refer my `package.json` file from line number 8 to 10.  The script should be called after building the site.  So I use `hexo g && npm run netlify-cms` to build the site.
 
@@ -238,15 +235,14 @@ You can add build commands in the Site settings of Netlify page.  However, you m
 This file would override the settings, that you mention in the netlify setting page.
 
 #### Use Cloudinary as media folder
-{% note info %}This is optional.{% endnote %}
-Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others.  So, I would suggest using http://cloudinary.com for hosting the site images.
+{% note default %}This is optional.{% endnote %}
+Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others. So, I would suggest using http://cloudinary.com for hosting the site images.
 
 You need to create a free account from cloudinary and get the required details from the dashboard page.  Then configure the `source/admin/config.yml` file as like below; refer lines between 7 and 13.
 
 Documentation on configuring netlify with clouodinary is available [here](https://www.netlifycms.org/docs/cloudinary/), if you wish to tweak further.
 
 {% code source/admin/config.yml %}
-
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -257,9 +253,9 @@ media_library:
   name: cloudinary
   output_filename_only: false
   config:
-    cloud_name: anbuchelva
-    api_key: 483245888948954
-    username: anbuchelva@gmail.com
+    cloud_name: # your cloudinary name available in the dashboard
+    api_key: # api key that you get from cloudinary dashboard
+    username: # the user id, which is used to create the cloudinary account
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
@@ -282,7 +278,7 @@ collections:
 
 ### Conclusion
 * Having a proper CMS setup would help to make the writing easy and spontaneous. 
-* Need not to depend on the personal computer with {% label @git %} and {% label @hexo %} configuured to push the commits or previewing the changes. 
+* Need not to depend on the personal computer with {% label @git %} and {% label @hexo %} configured to push the commits or previewing the changes. 
 * It helps to focus more on writing than tweaking the existing layouts.
 
 #### Next Steps
