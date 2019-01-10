@@ -14,35 +14,39 @@ keywords:
   - netlify-cms
 comments: true
 ---
-People create blogs and start writing posts frequently in the beginning and stops it gradually to zero.  I guess there are 3 types are people who writes blog.
+### Why Content Management System is needed for writing blogs?
+People create blogs and start writing posts frequently in the beginning and stops it gradually to zero.  I would say there are 3 types of people who write blogs.
 
 1. Who sees the platform as fresh, creates a blog starts writing a post or two then forget
-2. Who setup a blog, spending more time on tweaking than actually writing
+2. Who setup a blog, spending more time on tweaking the layout of the site than actually writing
 3. Who doesn't create a blog, opt the ready-made one available in the market such as [Medium](https://medium.com)
 
+The people who setup static websites falls in the first two categories.
 
-I feel there should be a medium to write something like a paper, notebook, diary to convert a thought that flash in our mind to a post or article.  When the {% label @gap %} increases on converting a thought to writing, it will never be written. The medium is the main obstacle that reduces the frequency of blog posts and makes to zero at the end.
+I feel there should be a medium to write something like a paper, notebook, diary to convert a thought that flash in our mind to a blog post.  When the {% label @gap %} increases in converting a thought into writing, probably it will never be written. The medium is the main obstacle that reduces the frequency of blog posts and makes to zero at the end.
 
+I started writing in this blog in a text editor, push it to git.  The main obstacle is that I have to write it only on my personal computer, where git installed.  When I don't have a computer with git installed, the {% label @gap %} increases.  I want to get rid of this.
+Found [Netlify-CMS](https://www.netlifycms.org/) as the better alternate to write blog posts, preview then publish.
 
-I started writing in this blog in a text editor, push it to git.  I have to write it only on my personal computer, where git installed.  When I don't have a computer with git installed, the {% label @gap %} increases.  I want to get rid of the obstacle.
-Found [netlify-cms](https://www.netlifycms.org/) as the better alternate to write blog posts, preview then publish.
+<!---more--->
 
-
+I would wanted to write my experience in setting up Netlify-CMS for this blog.
 
 {% note default %}
 
-1. This post is mainly for the people who already uses hexo platform for generating static websites.
-2. I use [Hexo-Theme-Next](http://theme-next.org/), which is the most used theme in hexo platform, the post is 100% compatible for this theme, may be applicable for other themes as well.
+1. This post is mainly for the people who already uses [Hexo](https://hexo.io/) platform for generating static websites.
+2. I use [Hexo-Theme-Next](http://theme-next.org/), which is the most used theme in Hexo platform, the post is 100% compatible for this theme, may be used as base for  other Hexo themes as well.
 
 {% endnote %}
 
 ### Create Hexo Blog and Deploy with Netlify
 
-There is an article written in Netlify's website, that explains creating a blog using Hexo and deploying with Netlify.  Refer this [link](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/) if you are going to setup a new blog using [Hexo](https://hexo.io) or going to use [Netlify](https://www.netlify.com) as CI for building your blog.
+There is an article written in Netlify's website, that explains how to create a blog using Hexo and deploy with Netlify.  Refer this [link](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/) if you are going to setup a new blog using [Hexo](https://hexo.io) or going to use [Netlify](https://www.netlify.com) as CI for building your blog.
 
 
 {% note info %}
 Configuring Netlify to build a static site is very easy; which also makes easy to configure Netlify-CMS. 
+
 If you depend on other CI like Travis, Circle-CI or GitLab CI to build your sites, you need to use [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/), which I have not tried yet.
 {% endnote %}
 
@@ -50,22 +54,25 @@ If you depend on other CI like Travis, Circle-CI or GitLab CI to build your site
 
 The following steps to be enabled for enabling Netlify-CMS.
 
-1. Update `<head>` and `<body>` tags
-2. Enable Netlify Identity Services
-3. Enable Git Gateway
-4. Configure CMS admin panel
+1. [Update `<head>` and `<body>` tags](#update-head-and-body-tags)
+2. [Enable Netlify Identity Services](#enable-netlify-identity)
+3. [Enable Git Gateway](#enable-git-gateway)
+4. [Configure CMS admin panel](#configure-cms-admin-panel)
+5. [Build Site without Bug](#building-sites)
+6. [Cloudinary as CDN for media](#use-cloudinary-as-media-folder) {% label @optional %}
 
-#### Update `<head>` and `<body>` tagsThere would be few lines of codes to be added in `<head>` and `<body>` sections, in order to enable Identity services.
+#### Update `<head>` and `<body>` tags
+There would be few lines of codes to be added in `<head>` and `<body>` sections, in order to enable Identity services.
 
 There are multiple ways to do it, I prefer the easiest way by updating it in the netlify settings.  Go to https://app.netlify.com/ select your {% label @project name %} > {% label @Site Settings %} > {% label @Build & Deploy %} > {% label @Post processing %} > {% label @Snippet injection %} > {% label @Add Snippet %}, then add the following codes in Head and Body sections.
 
 ##### Head Section `<head>`
-{% code `<head>` %}
+{% code %}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {% endcode %}
 
-##### Body Section
-{% code `<body>` %}
+##### Body Section `<body>`
+{% code %}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -79,32 +86,34 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
 </script>
 {% endcode %}
 
-The outcome should look like this, if you have used the 3rd option.
+The outcome should look like this.
 
 ![netlify_snippet_injection]()
 
 #### Enable Netlify Identity
-Netlify Identity Services to be enabled for adding users and enable authentication to them.  Go to {% label @Settings %} > {% label @Identity %} > {% label @Enable Identity %}
+Netlify Identity Services to be enabled for adding users and to enable authentication to them.  Go to {% label @Settings %} > {% label @Identity %} > {% label @Enable Identity %}
 
 You may add Github / GitLab / BitBucket / Google as external providers.
 
 ![netlify_identity_external_providers](<>)
 
 #### Enable Git Gateway
-Git Gateway connects the site with GitHub’s API.  Netlify would create branches, update, commit content, etc., This should be enabled in the Identity > Services section.
+Git Gateway connects the site to the git provider's API. This should be enabled in the Identity > Services section.
 
 ![netlify_git_gateway]()
 
 ### Modify the Site Contents
+There would be small changes required in the site contents, which would help to setup the [Front-matter](https://hexo.io/docs/front-matter).
+
 #### Configure CMS Admin Panel
-There would be small changes required in the site contents, which would help to setup the [Front-matter](https://hexo.io/docs/front-matter).  Create a folder called {% label @admin %} under the source folder and add the following two files in it.
+Create a folder called {% label @admin %} under the source folder and add the following two files in it.
 
 ![netlify_admin_folder](<>)
 
 ##### index.html
-This file is used for displaying the content management system. Copy the following and put it in {% label @index.html %} file, without making any changes.
+This file is used for displaying the content management system. Copy the following code and put it in {% label @index.html %} file, without making any changes.
 
-{% code source/index.html %}
+{% code source/admin/index.html %}
 ---
 layout: false
 ---
@@ -122,10 +131,14 @@ layout: false
 </html>
 {% endcode %}
 
+{% note warning %}
+the layout should be set as false, so that it will not interfere with the site's CSS setup.
+{% endnote %}
+
 ##### config.yml
 This file is used to configure the [Front-matter](https://hexo.io/docs/front-matter) of the blog posts.  There are few modifications needed on the code, based on your requirement.
 
-{% code admin/config.yml %}
+{% code source/admin/config.yml %}
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -156,25 +169,31 @@ I have tried explaining each part of the above code, which may helpful.
 
 | parameter | description |
 | - | - |
-| `backend` > `name` | keep it default as `git-gateway` unless you want to enable [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/) |
-| `backend` > `branch` | update the {% label danger @branch %} name where the site contents / source code is saved. |
-| publish_mode: editorial_workflow | refer this [link](/https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. Editorial Workflow works only for GitHub as of now. Comment / delete this line if you are using other hosts such as GitLab or BitBucket. |
-| media_folder | this should refer the images folder of the site contents. The default folder for hexo is located at `source/images` |
-| public_folder | this is where the images are available after building the site. The default folder for hexo is located at `/images` |
-| collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  You can keep the source code as it is given, which works well for almost all the hexo themes.  You may add additional collections based on the requirement. |
+| `name` | Keep it default as `git-gateway` unless you want to enable [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/) |
+| `branch` | Update the {% label danger @branch %} name where the site contents / source code is saved. |
+| publish_mode:  editorial_workflow | Refer this [link](/https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. 
+Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
+| media_folder | This is where the images are stored in the source of the site. 
+The default folder for hexo is located at `source/images` |
+| public_folder | This is where the images are available after building the site. 
+The default folder for hexo is located at `/images` |
+| collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  
+You can keep the source code without any changes, which works well for almost all the hexo themes.  
+You may add additional collections based on the requirement. |
 
 {% note info %}
-Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow`.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in different URL than the site's URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes and deleting the branch.
+Netlify CMS is following different way in creating a draft post and preview it using `editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made {% label @Ready %} and {% label @Published %}, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
 
-**This Works only on Github**.  GitLab and BitBucket works differently.{% endnote %}
+{% label warning @This is applicable only for Github %}.  GitLab and BitBucket works differently.{% endnote %}
 
 #### Building Sites
-You might have used `hexo g` or `hexo generate` as the command to build your site.  Refer the following to fix a bug, that doesn't load CMS page.
+You might have used `hexo g` or `hexo generate` command to build the site. Though, the CMS wouldn't load.  Refer the following portion that fixes a bug.
 
-##### Fixing Bug
-I had an issue after making all the above configurations and I was unable to access the CMS page by visiting https://blog.anbuchelva.in/admin page.  Found that the `config.yml` which we have updated got renamed as `config.json` with some changes after building the site. So I had to copy this file from `source/admin` folder to `public/admin` folder. I had to do this step once CI build the site.
+##### Fixing Bug in config.yml
+I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the `source/admin/**config.yml**` is renamed as `public/admin/**config.json**` with some modification after building the site. So I had to copy this file from `source/admin/config.yml` as  `public/admin/config.yml`. I had to do this step once Netlify CI build the site.
 
-So, I have put this code in the `package.json` file as {% label @script %}. Refer my `package.json` file from line number 8 to 10.  The script should be called after building the site as `hexo g && npm run netlify-cms`.
+So, I have put this code in the `package.json` file as {% label @script %}. Refer my `package.json` file from line number 8 to 10.  The script should be called after building the site.  So I use `hexo g && npm run netlify-cms` to build the site.
+
 {% code package.json %}
 {
   "name": "hexo-site",
@@ -216,17 +235,18 @@ You can add build commands in the Site settings of Netlify page.  However, you m
   environment = {NODE_ENV = "8.10.0"}
 {% endcode %}
 
-This file would override the settings, that you have enabled in the netlify setting page.
+This file would override the settings, that you mention in the netlify setting page.
 
 #### Use Cloudinary as media folder
-
-Hosting images in the git repo is a bad idea, as the repo size would gradually increase.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want your site contents to be hidden from prying eyes.  So, I would suggest using http://cloudinary.com for hosting the site images.
+{% note info %}This is optional.{% end note %}
+Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others.  So, I would suggest using http://cloudinary.com for hosting the site images.
 
 You need to create a free account from cloudinary and get the required details from the dashboard page.  Then configure the `source/admin/config.yml` file as like below; refer lines between 7 and 13.
 
 Documentation on configuring netlify with clouodinary is available [here](https://www.netlifycms.org/docs/cloudinary/), if you wish to tweak further.
 
 {% code source/admin/config.yml %}
+
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -237,28 +257,34 @@ media_library:
   name: cloudinary
   output_filename_only: false
   config:
-    cloud_name: # your cloudinary name available in the dashboard    api_key: # api key that you get from cloudinary dashboard    username: # the user id, which is used to create the cloudinary account
-collections:
+    cloud_name: anbuchelva
+    api_key: 483245888948954
+    username: anbuchelva@gmail.com
 
-* name: "posts" # Used in routes, e.g., /admin/collections/blog
-      label: "Post" # Used in the UI
-      folder: "source/_posts" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Publish Date", name: "date", required: true, widget: "datetime"}
-        - {label: "Edited Date", name: "updated", required: true, widget: "datetime"}
-        - {label: "Categories", name: "category", required: true, widget: "list"}
-        - {label: "Tags", name: "tags", required: false, widget: "list"}
-        - {label: "Keywords", name: "keywords", required: false, widget: "list"}
-        - {label: "Body", name: "body", widget: "markdown"}
-        - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-  {% endcode %}
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "source/_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", required: true, widget: "datetime"}
+      - {label: "Edited Date", name: "updated", required: true, widget: "datetime"}
+      - {label: "Categories", name: "category", required: true, widget: "list"}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
+      - {label: "Keywords", name: "keywords", required: false, widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
+
+
+{% endcode %}
 
 ### Conclusion
-Having a proper CMS setup would help to make the writing easy and spontaneous. `git` is not needed for pushing the creating / modifying the content of the site. It helps to focus more on writing than tweaking the existing layouts.
+* Having a proper CMS setup would help to make the writing easy and spontaneous. 
+* Need not to depend on the personal computer with {% label @git %} and {% label @hexo %} configuured to push the commits or previewing the changes. 
+* It helps to focus more on writing than tweaking the existing layouts.
 
 #### Next Steps
-1. I might need to explore the options to create custom widgets to include [Tag Plugins for Hexo](https://hexo.io/docs/tag-plugins) and [Tag Plugins for Next](https://theme-next.org/docs/tag-plugins/)
-2. I might need to find a way to tweak the preview of markdown in the CMS portal, which is not in sync with the site.
+* I might need to explore the options to create custom widgets to include [Tag Plugins for Hexo](https://hexo.io/docs/tag-plugins) and [Tag Plugins for Next](https://theme-next.org/docs/tag-plugins/)
+* I might need to find a way to tweak the preview of markdown in the CMS portal, which is not in sync with the site.
