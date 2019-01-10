@@ -284,5 +284,5 @@ collections:
 * It helps to focus more on writing than tweaking the existing layouts.
 
 #### Next Steps
-* I might need to explore the options to create custom widgets to include [Tag Plugins for Hexo](https://hexo.io/docs/tag-plugins) and [Tag Plugins for Next](https://theme-next.org/docs/tag-plugins/)
+* I might need to explore the options to create [custom widgets](https://www.netlifycms.org/docs/custom-widgets/) to include [Tag Plugins for Hexo](https://hexo.io/docs/tag-plugins) and [Tag Plugins for Next](https://theme-next.org/docs/tag-plugins/)
 * I might need to find a way to tweak the preview of markdown in the CMS portal, which is not in sync with the site.
