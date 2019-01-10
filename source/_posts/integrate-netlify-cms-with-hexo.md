@@ -238,7 +238,7 @@ You can add build commands in the Site settings of Netlify page.  However, you m
 This file would override the settings, that you mention in the netlify setting page.
 
 #### Use Cloudinary as media folder
-{% note info %}This is optional.{% end note %}
+{% note info %}This is optional.{% endnote %}
 Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others.  So, I would suggest using http://cloudinary.com for hosting the site images.
 
 You need to create a free account from cloudinary and get the required details from the dashboard page.  Then configure the `source/admin/config.yml` file as like below; refer lines between 7 and 13.
