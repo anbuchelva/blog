@@ -132,7 +132,7 @@ This file is used for displaying the content management system. Copy the followi
 ##### config.yml
 This file is used to configure the [Front-matter](https://hexo.io/docs/front-matter) of the blog posts.  There are few modifications needed on the code, based on your requirement.
 
-{% code source/admin/config.yml %}
+``` source/admin/config.yml
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -157,7 +157,7 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-{% endcode %}
+```
 
 I have tried explaining each part of the above code, which may helpful.
 
@@ -215,7 +215,7 @@ You need to create a free account from cloudinary and get the required details f
 
 Documentation on configuring netlify with clouodinary is available [here](https://www.netlifycms.org/docs/cloudinary/), if you wish to tweak further.
 
-{% code source/admin/config.yml %}
+``` source/admin/config.yml
 backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
@@ -245,7 +245,7 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-{% endcode %}
+```
 
 ### Conclusion
 * Having a proper CMS setup would help to make the writing easy and spontaneous. 
