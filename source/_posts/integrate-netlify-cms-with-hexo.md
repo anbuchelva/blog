@@ -59,7 +59,7 @@ The following steps to be enabled for enabling Netlify-CMS.
 2. [Enable Netlify Identity Services](#enable-netlify-identity)
 3. [Enable Git Gateway](#enable-git-gateway)
 4. [Configure CMS admin panel](#configure-cms-admin-panel)
-5. [Build Site without Bug](#building-sites)
+5. [Build Site without Bugs](#building-sites)
 6. [Cloudinary as CDN for media](#use-cloudinary-as-media-folder)
 
 #### Update `<head>` and `<body>` tags
@@ -115,9 +115,6 @@ Create a folder called {% label @admin %} under the source folder and add the fo
 This file is used for displaying the content management system. Copy the following code and put it in {% label @index.html %} file, without making any changes.
 
 {% code source/admin/index.html %}
----
-layout: false
----
 <!doctype html>
 <html>
 <head>
@@ -131,10 +128,6 @@ layout: false
 </body>
 </html>
 {% endcode %}
-
-{% note warning %}
-The layout should be set as false, so that it will not interfere with the site's CSS setup.
-{% endnote %}
 
 ##### config.yml
 This file is used to configure the [Front-matter](https://hexo.io/docs/front-matter) of the blog posts.  There are few modifications needed on the code, based on your requirement.
@@ -172,7 +165,7 @@ I have tried explaining each part of the above code, which may helpful.
 | - | - |
 | `name` | Keep it default as `git-gateway` unless you want to enable [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/) |
 | `branch` | Update the {% label danger @branch %} name where the site contents / source code is saved. |
-| publish_mode:  editorial_workflow | Refer this [link](/https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
+| publish_mode:  editorial_workflow | Refer this [link](https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
 | media_folder | This is where the images are stored in the source of the site. The default folder for hexo is located at `source/images` |
 | public_folder | This is where the images are available after building the site. The default folder for hexo is located at `/images` |
 | collections | Collections are explained very well [here](https://www.netlifycms.org/docs/configuration-options/#collections).  You can keep the source code without any changes, which works well for almost all the hexo themes.  You may add additional collections based on the requirement. |
@@ -188,49 +181,22 @@ Editorial Workflow i.e., creating a pull request / merging it back is applicable
 #### Building Sites
 You might have used `hexo g` or `hexo generate` command to build the site. Though, the CMS wouldn't load.  Refer the following portion that fixes a bug.
 
-##### Fixing Bug in config.yml
-I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the `source/admin/config.yml` is renamed as `public/admin/config.json` with some modification after building the site. So I had to copy this file from `source/admin/config.yml` as  `public/admin/config.yml`. I had to do this step once Netlify CI build the site.
+##### Fixing Bug in rendering CMS Admin
+I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the `source/admin/config.yml` is renamed as `public/admin/config.json` with some modification after building the site. This can be fixed by adding admin folder contents in the `skip_render` option of hexo {% label @config.yml %} file.
 
-So, I have put this code in the `package.json` file as {% label @script %}. Refer my `package.json` file from line number 8 to 10.  The script should be called after building the site.  So I use `hexo g && npm run netlify-cms` to build the site.
-
-{% code package.json %}
-{
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": "3.8.0"
-  },
-  "scripts": {
-    "netlify-cms": "cp source/admin/config.yml public/admin/config.yml"
-  },
-  "dependencies": {
-    "hexo": "^3.8.0",
-    "hexo-filter-optimize": "^0.2.5",
-    "hexo-generator-archive": "^0.1.5",
-    "hexo-generator-better-sitemap": "^0.1.1",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-feed": "^1.2.2",
-    "hexo-generator-index": "^0.2.1",
-    "hexo-generator-searchdb": "^1.0.8",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-markdown-it-plus": "^1.0.4",
-    "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.3",
-    "hexo-symbols-count-time": "^0.4.4",
-    "markdown-it-emoji": "^1.4.0"
-  }
-}
+{% code config.yml %}
+skip_render: admin/*
 {% endcode %}
 
 ##### Configure netlify.toml for Building Sites
+
+{% note default %}This section is optional one.{% endnote %}
 You can add build commands in the Site settings of Netlify page.  However, you may configure additional steps by creating `netlify.toml` file in the root of the site folder.
 
 {% code netlify.toml %}
 [build]
   publish = "public/"
-  command = "hexo clean && hexo g && npm run netlify-cms"
+  command = "hexo clean && hexo g"
   environment = {NODE_ENV = "8.10.0"}
 {% endcode %}
 
@@ -253,7 +219,7 @@ publish_mode: editorial_workflow
 
 media_library:
   name: cloudinary
-  output_filename_only: false
+  output_filename_only: false #false = bring the file name with entire path true = bring file name only
   config:
     cloud_name: # your cloudinary name available in the dashboard
     api_key: # api key that you get from cloudinary dashboard
