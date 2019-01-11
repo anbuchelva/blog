@@ -8,5 +8,4 @@ category:
 {% cq %} Wishing everyone a happy and prosperous new year! {% endcq %}
 
 <!---more--->
-
-![2018 => 2019](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/2018_2019_600px.png)
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/2018_2019_600px.png@lazy, 2018 => 2019 %}

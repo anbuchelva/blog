@@ -22,6 +22,8 @@ There will be Pros and Cons on this change.
 
 <!---more--->
 
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546937211/images/github_private_repo/github.png@lazy, Github,,75% %}
+
 ### The Process
 
 Creating new repository has an option to choose between Private and Public, which is very simple.

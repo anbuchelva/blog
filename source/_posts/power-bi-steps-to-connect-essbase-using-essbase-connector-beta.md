@@ -25,6 +25,8 @@ Though, I wanted to give a try.
 
 <!---more--->
 
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546937211/images/power-bi/power-bi.png @lazy, power-bi,,75% %}
+
 ### Essbase Connector
 
 The connector is listed under the **Database** tab when we select **Get Data** or you may search for {% label @Essbase %} on the search box.  Selecting Essbase and clicking _connect_ would take us to the next window, which requires us to provide the **Essbase** server details.

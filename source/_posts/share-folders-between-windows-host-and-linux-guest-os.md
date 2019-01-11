@@ -22,6 +22,8 @@ I used to have it in dual boot mode, but it makes difficult to reboot between di
 
 <!---more--->
 
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546937211/images/virualbox/Virtualbox_logo.png @lazy, Virtualbox,,50% %}
+
 To solve things, we started using [VirtualBox](https://virtualbox.org/) with [Linux Mint](https://linuxmint.com/) as a guest OS, since the laptop comes with Windows 10 pre-installed.
 
 ### The Issue
