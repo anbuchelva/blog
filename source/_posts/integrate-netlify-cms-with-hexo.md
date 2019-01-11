@@ -145,9 +145,9 @@ public_folder: "/images" # The src attribute for uploaded media will begin with 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
-    folder: "source/_posts" # The path to the folder where the documents are stored    
+    folder: "source/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "integrate-netlify-cms-with-hexo" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", required: true, widget: "datetime"}
