@@ -14,3 +14,9 @@
 [context.branch-deploy]
   command = "hexo clean && hexo g"
   publish = "public/"
+
+[[redirects]]
+  from = "https://anbu-blog.netlify.com/*"
+  to = "https://blog.anbuchelva.in/*"
+  status = 301
+  force = true
