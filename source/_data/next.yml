@@ -523,7 +523,7 @@ disqus:
   enable: true
   shortname: anbu-blog
   count: true
-  lazyload: false
+  lazyload: true
 
 # changyan
 changyan:
