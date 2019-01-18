@@ -30,7 +30,7 @@ I am kind of person to see the results immediately. Planning manpower and seeing
 
 I got an opportunity to join the BI-EPM team. I was hired by [Kumari Umapathy](https://www.linkedin.com/in/kumariumapathy/) and was reporting to [Dan Gagnon](https://www.linkedin.com/in/dan-gagnon-56b05249/). Learning on Hyperion Platform is steep and long however both have mentored me to learn and grow up to this level.  I'm thankful to you for my life time!
 
-[Narayana Vemuluri](https://www.linkedin.com/in/narayana-vemuluri-28302322) who admired me the way understand things faster and making decisions making me to set as a role model.  Thank you for trust that you have on me!
+[Narayana Vemuluri](https://www.linkedin.com/in/narayana-vemuluri-28302322) who admired me the way understand things faster and making decisions.  Thank you for trust that you have on me!
 
 The team who knows their responsibility and don't hesitate to work on long hours when it is needed. You people gave me a good company.  Thank you to Ramky, Suren, KC, Sarath, Mahesh, Ravi, Satya, Aravind, Naresh, Ramesh and Hari.
 
