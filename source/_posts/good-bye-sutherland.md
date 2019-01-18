@@ -50,5 +50,5 @@ Have a wonderful life!
 Anbuselvan 🖖
 
 {% note default %}
-Please open this post in outside Sutherland network, if you wish to make comments. 
+Sutherland has restrictions in loading the comment module. Please access this page in your personal network rather than Sutherland's network, if you wish to make comments. 
 {% endnote %}
