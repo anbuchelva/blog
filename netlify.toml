@@ -16,7 +16,7 @@
   publish = "public/"
 
 [[redirects]]
-  from = "https://anbu-blog.netlify.com/*"
-  to = "https://blog.anbuchelva.in/*"
+  from = "https://anbu-blog.netlify.com/"
+  to = "https://blog.anbuchelva.in/"
   status = 301
   force = true
