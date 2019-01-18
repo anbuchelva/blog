@@ -22,7 +22,7 @@ I was hired by [Kannan M](https://www.linkedin.com/in/kannan-meenakshi-sundaram-
 
 There are important people who I interacted on daily basis during Manpower Planning phase. I would like to thank them for making my days much easier.   [Mithun Mukunthan](https://www.linkedin.com/in/mithun-mukundan-27839a1/), [Angelina Michael](https://www.linkedin.com/in/angelina-michael-3060044/), [Muralidhur KV](https://www.linkedin.com/in/muralidhur-katrapati-79578a7/), [Balachandar Selvaraj](https://www.linkedin.com/in/balachandar-selvaraj-b31aa728/), [Balaji Selvanambi](https://www.linkedin.com/in/balajiselvanambi/), [Rudra Gunaseelan](https://www.linkedin.com/in/rudra-gunaseelan-a32415b/), [Sukesh Telang](https://www.linkedin.com/in/sukesh-telang-395a85108/), [Amit Bhan](https://www.linkedin.com/in/amit-bhan-729a9313/), [Sandhya Rani](https://www.linkedin.com/in/sandhya-rani-ss-4222148b/). I'm glad to working with you all.
 
-I made few life time friends here, Muthu, Vinoth, Jai, Vijay, Riyaz, Ramky, Samy, Bala, Mani. It was fun working with you guys!
+I made few life time friends here, Muthu, Vinoth, Jai, Vijay, Riyaz, Ramky, Samy, Renga, Bala, Mani. It was fun working with you guys!
 
 ### BI-EPM Team
 
@@ -33,6 +33,8 @@ I got an opportunity to join the BI-EPM team. I was hired by [Kumari Umapathy](h
 [Narayana Vemuluri](https://www.linkedin.com/in/narayana-vemuluri-28302322) who admired me the way understand things faster and making decisions.  Thank you for trust that you have on me!
 
 The team who knows their responsibility and don't hesitate to work on long hours when it is needed. You people gave me a good company.  Thank you to Ramky, Suren, KC, Sarath, Mahesh, Ravi, Satya, Aravind, Naresh, Ramesh and Hari.
+
+Thanks to the Business Controllers and FP&A group, who are the primary customers for this team; without you, I wouldn't have had this job.
 
 I am thankful to everyone in this organization for providing me opportunity and work.  I apologize if I have hurt you at any time.
 
