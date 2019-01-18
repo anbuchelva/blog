@@ -30,21 +30,20 @@ I am kind of person to see the results immediately. Planning manpower and seeing
 
 I got an opportunity to join the BI-EPM team. I was hired by [Kumari Umapathy](https://www.linkedin.com/in/kumariumapathy/) and was reporting to [Dan Gagnon](https://www.linkedin.com/in/dan-gagnon-56b05249/). Learning on Hyperion Platform is steep and long however both have mentored me to learn and grow up to this level.  I'm thankful to you for my life time!
 
-[Narayana Vemuluri](https://www.linkedin.com/in/narayana-vemuluri-28302322/) who admired me they way administrating the team making me to set him as a role model.  Thank you for trust and support that you have on me!
+[Narayana Vemuluri](https://www.linkedin.com/in/narayana-vemuluri-28302322) who admired me the way understand things faster and making decisions making me to set as a role model.  Thank you for trust that you have on me!
 
 The team who knows their responsibility and don't hesitate to work on long hours when it is needed. You people gave me a good company.  Thank you to Ramky, Suren, KC, Sarath, Mahesh, Ravi, Satya, Aravind, Naresh, Ramesh and Hari.
 
-I am thankful to everyone in this organization for providing me opportunity and to work peacefully.  I apologize if I have hurt you at any time.
+I am thankful to everyone in this organization for providing me opportunity and work.  I apologize if I have hurt you at any time.
 
 Please be in touch; you may contact me by 
 
-* The traditional way by sending an email to email@anbuchelva.in
-* You wish to follow my career updates send a connection request at [LinkedIn](https://www.linkedin.com/in/anbuchelva/)
-* Looking for immediate response send a [Telegram](https://t.me/anbuchelva)
-* Looking for sending a confidential message? use [Keybase](https://keybase.io/anbuchelva) to get my public keys.
+* The traditional way by sending an email to hello@anbuchelva.in
+* You wish to follow my career updates send a connection request at [LinkedIn](https://www.linkedin.com/in/anbuchelva)  
+* Looking for immediate response send a [Telegram](https://t.me/anbuchelva)  
+* Looking for sending a confidential message? use [Keybase](https://keybase.io/anbuchelva) to get my public keys.  
 
 
 
-Have a wonderful life!
-
+Have a wonderful life!  
 Anbuselvan 🖖
