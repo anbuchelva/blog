@@ -48,3 +48,7 @@ I would be happy if we keep in touch; you may contact me by
 
 Have a wonderful life!  
 Anbuselvan 🖖
+
+{% note default %}
+Please open this post in outside Sutherland network, if you wish to make comments. 
+{% endnote %}
