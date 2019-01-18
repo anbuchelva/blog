@@ -16,7 +16,7 @@ I was part of two different roles both were related to planning; the first one i
 
 <!---more--->
 
-\### Manpower Planning Team
+### Manpower Planning Team
 
 I was hired by [Kannan M](https://www.linkedin.com/in/kannan-meenakshi-sundaram-56a16a1/) and was reporting to [Palaniyappan](https://www.linkedin.com/in/palaniyappan-subramanian-864a8816/) in the initial period.  I learnt how to exactly read data and make projections based on the history. Then later the Manpower Planning team was handed over to [Pammi Rupesh](https://www.linkedin.com/in/pammirupesh/) when it became more dynamic.  It gave more confidence on the projections that I made and to grab opportunities to directly interact with the clients. I'm really thankful to them for the trust that they had in me and pushing me to achieve things.
 
@@ -24,7 +24,7 @@ There are important people who I interacted on daily basis during Manpower Plann
 
 I made few life time friends here, Muthu, Vinoth, Jai, Vijay, Riyaz, Ramky, Samy, Bala, Mani. It was fun working with you guys!
 
-\### BI-EPM Team
+### BI-EPM Team
 
 I am kind of person to see the results immediately. Planning manpower and seeing the results would take at least 3-6 months time.  I always wanted to work on technical side where I write code and see the results immediately. 
 
