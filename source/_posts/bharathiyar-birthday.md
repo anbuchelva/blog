@@ -13,7 +13,7 @@ keywords:
   - kavithai
   - thedi soru thinam thindru
 ---
-{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/Bharathi.jpg@lazy, Bharathi %}
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg@lazy, Bharathi %}
 
 தேடிச் சோறுநிதந் தின்று - பல  
 சின்னஞ் சிறுகதைகள் பேசி - மனம்  

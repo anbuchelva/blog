@@ -22,7 +22,7 @@ I used to have it in dual boot mode, but it makes difficult to reboot between di
 
 <!---more--->
 
-{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546937211/images/virualbox/Virtualbox_logo.png @lazy, Virtualbox,,50% %}
+{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546937623/images/virualbox/Virtualbox_logo.png @lazy, Virtualbox,,50% %}
 
 To solve things, we started using [VirtualBox](https://virtualbox.org/) with [Linux Mint](https://linuxmint.com/) as a guest OS, since the laptop comes with Windows 10 pre-installed.
 
@@ -43,12 +43,12 @@ sudo usermod -aG vboxsf $(whoami)
 
 #### GUI Way
 Search for {% label @User Settings %} and you will get the following window.  
-![Linux Mint User Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/linux-mint-user-settings.png)
+![Linux Mint User Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-settings.png)
 
 Click on {% label, @Manage Groups %} button, identify {% label @vboxsf %} group.  
-![Linux Mint Group Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/linux-mint-group-settings.png)
+![Linux Mint Group Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-group-settings.png)
 
 Then click {% label, @Properties %} and select the user name which you want to have access to the shared folder.  
-![Linux Mint User Group Properties](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/linux-mint-user-group-properties.png)
+![Linux Mint User Group Properties](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-group-properties.png)
 
 Logging off the user (if already logged in) and log in back, would solve the issue.

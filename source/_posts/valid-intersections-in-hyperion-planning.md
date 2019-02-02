@@ -63,13 +63,13 @@ The {% label @dyn_Valid Intersection %} member would give an output as 0 or 1 (y
 Open the form in {% label @Edit %} mode and go to {% label @Layout %} tab.
 1. Add the {% label @dyn_Valid Intersection %} member in the first row of every form, where you want to set up this validation. _I'm trying to find a way to achieve the output without adding a row_
 2. Select {% label @Validation Rules %} from right pane, click the {% label @+ %} sign and setup a validation rule as like the screen shot  
-![Hyperion Planning Form Validation Rule Setup](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/Validation_Rule1.PNG)  
+![Hyperion Planning Form Validation Rule Setup](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule1.PNG)  
 2. I keep the process format in grey, as it would mimic the user that the cell is for editing, though it is editable. You may add a {% label @Validation Message %} which will be displayed to the users upon error.  
-![Hyperion Planning Form Validation Error Message](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/Validation_Rule2.PNG)  
+![Hyperion Planning Form Validation Error Message](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule2.PNG)  
 3. Once done, click {% label @Validate %} to validate the {% label @Validation Rule %} :wink:  
-![Hyperion Planning Form Validate validation rule](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/Validation_Rule3.PNG)  
+![Hyperion Planning Form Validate validation rule](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule3.PNG)  
 4. Now open the form to input data and select incorrect combination from the {% label @Page %} section / {% label @drop down %}. You will see all the cells are grayed out. When you try to input data in a {% label @store %} member, you will get the error message that was setup in the {% label @Validation Rule %}.  
-![Hyperion Planning Validation Rule Invalid Intersections](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/Validation_Rule4.PNG)  
+![Hyperion Planning Validation Rule Invalid Intersections](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule4.PNG)  
 5. It doesn't restrict user to input on the invalid intersections. However, it just give a warning to them that they have selected invalid intersections and inputting data.
 
 #### Step 4: Setup a Business rule to validate the intersections while saving form.
