@@ -703,7 +703,7 @@ gitalk:
 # Likely supports four looks, nine social networks, any button text
 # You are free to modify the text value and order of any network
 likely:
-  enable: true
+  enable: false
   look: normal # available values: normal, light, small, big
   networks:
     twitter: Tweet
