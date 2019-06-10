@@ -1,7 +1,7 @@
 ---
 title: Bypass Screenshot Restriction on Android
 date: 2018-10-24 12:32:27
-updated: 2018-10-24 18:22:00
+updated: 2019-06-11 01:17:00
 category:
   - android
 tags:
@@ -46,5 +46,5 @@ That's all!! This would __NOT__ require rooting, installing any unknown applicat
 ### Video Explanation
 I have made a video, to explain the same using __Telegram Secret Chat__ feature.  You may apply the same in snapchat, UTS app, etc.,
 
-{% youtube JOwZ1WDgqPw %}
+{% youtube LG9duUJ9SKg %}
 
