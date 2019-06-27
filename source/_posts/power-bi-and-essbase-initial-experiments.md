@@ -1,7 +1,7 @@
 ---
 title: Power BI and Essbase - Initial Experiments
 date: 2018-12-23T19:18:37.727Z
-updated: 2019-27-06T13:10:37.727Z
+updated: 2019-06-27 2:18:37 UTC
 category:
   - Hyperion
 tags:
@@ -58,4 +58,4 @@ If you notice the {% label @Period %} Dimension, the levels represented in Power
 
 Logs for reference : <https://hastebin.com/riqujohufi.sql>
 
-{% note info %} Update: Expecting a proper document from Microsoft on connecting essbase from Power BI. Refer the [Git issue here](https://github.com/MicrosoftDocs/powerbi-docs/issues/540) for the status. {% endnote %}
+{% note info %} Update: Expecting a proper document from Microsoft on connecting essbase from Power BI. Refer the [Git issue here](https://github.com/MicrosoftDocs/powerbi-docs/issues/540). {% endnote %}
