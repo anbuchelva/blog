@@ -1,7 +1,7 @@
 ---
 title: Power BI and Essbase - Initial Experiments
 date: 2018-12-23T19:18:37.727Z
-updated: 2018-12-23T19:18:37.727Z
+updated: 2019-27-06T13:10:37.727Z
 category:
   - Hyperion
 tags:
@@ -57,3 +57,5 @@ Then I tried creating very small ASO application and loaded some random data.  T
 If you notice the {% label @Period %} Dimension, the levels represented in Power BI is similar to the Generation that we call in Essbase.
 
 Logs for reference : <https://hastebin.com/riqujohufi.sql>
+
+{% note info %} Update: Expecting a proper document from Microsoft on connecting essbase from Power BI. Refer the [Git issue here](https://github.com/MicrosoftDocs/powerbi-docs/issues/540) for the status. {% endnote %}
