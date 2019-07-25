@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "braces": "^3.0.2",
-    "hexo": "^3.8.0",
+    "hexo": "^3.9.0",
     "hexo-filter-optimize": "^0.2.5",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-better-sitemap": "^0.1.2",
