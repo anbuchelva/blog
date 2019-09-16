@@ -20,8 +20,6 @@ I have tried connecting to two different ASO cubes and share how Essbase reacts 
 
 <!---more--->
 
-{% fi https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/power-bi.png @lazy, power-bi,,75% %}
-
 Initially I have tried connecting the {% label @ASOsamp %} application after loading some random values as shown in the screenshot.
 
 ![Power_BI_Essbase_Connector_Initial_Experiments](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/asosamp-dataload.png)
