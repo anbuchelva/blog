@@ -10,7 +10,7 @@
 override: true
 
 # Console reminder if new version released.
-reminder: true
+reminder: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
@@ -66,7 +66,7 @@ footer:
     color: "#8B0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: made with love by Anbuselvan
 
   powered:
     # Hexo link (Powered by Hexo).
@@ -157,7 +157,7 @@ baidu_push: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  about: /about/ || user
+  # about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -178,9 +178,9 @@ menu_settings:
 
 # Schemes
 # scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
+scheme: Mist
+# scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -264,7 +264,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
@@ -439,7 +439,7 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -496,13 +496,13 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Ruda #Merriweather Lato
+    family: Ruda #Lato #Livvic #Rubik #Ruda  
     size:
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
+    family: #Ruda
     size:
 
   # Font settings for headlines (<h1> to <h6>).
@@ -903,7 +903,7 @@ mermaid:
 # Use velocity to animate everything.
 # For more information: http://velocityjs.org
 motion:
-  enable: true
+  enable: false
   async: true
   transition:
     # Transition variants:
@@ -1042,8 +1042,8 @@ vendors:
 
   # DisqusJS
   # Example:
-  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  # disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  # disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   # disqusjs_js:
   # disqusjs_css:
 
