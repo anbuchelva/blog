@@ -13,12 +13,14 @@ keywords:
   - Essbase
   - Connector
   - Connector
+thumbnailimage: "https://powerbi.microsoft.com/pictures/shared/social/social-default-image.png"
+url: "Hyperion/power-bi-and-essbase-initial-experiments/"
 ---
 Please go through my previous post that explains [how to connect Essbase with Power BI using the Essbase (beta) connector](/hyperion/power-bi-steps-to-connect-essbase-using-essbase-connector-beta/), if you are getting your hands in the first time.
-
+<!--more-->
 I have tried connecting to two different ASO cubes and share how Essbase reacts while creating a new model in Power-BI.
 
-<!---more--->
+
 
 Initially I have tried connecting the {% label @ASOsamp %} application after loading some random values as shown in the screenshot.
 

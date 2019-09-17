@@ -13,14 +13,15 @@ keywords:
   - gitlab
   - private repositories
 comments: true
+thumbnailimage: "https://image.flaticon.com/icons/png/512/36/36686.png"
+url: "/git/github-offers-unlimited-free-private-repositories/"
 ---
 Starting today [GitHub](https://github.com/) offers unlimited free private repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
-
+<!--more-->
 Since Microsoft acquired GitHub last year, I expected this change.  However, the business model might affect if they do it, as most of the projects hosted in GitHub compared to the competitors.
 
 There will be Pros and Cons on this change.
 
-<!---more--->
 
 ### The Process
 
