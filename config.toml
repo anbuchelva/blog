@@ -21,9 +21,10 @@ disqusShortname = "anbu-blog"
 # googleAnalytics = "UA-123-45"
 paginate = 12
 canonifyurls = true
+# relativeURLs = true
 
 [permalinks]
-  post = "/:year/:month/:slug/"
+  post = "/:slug/"
 
 [taxonomies]
   tag = "tags"
@@ -31,8 +32,8 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Anbuselvan"
-  #bio = "Super bio with markdown support **COOL**"
+  name = "Anbuselvan Palaniyandi"
+  bio = "an EPM Consultant and an Android Enthusiast"
   #job = "Your job title"
   #location = "France"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -83,18 +84,42 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
   url = "/index.xml"
 
-# [[menu.links]]
-  # weight = 1
-  # identifier = "github"
-  # name = "GitHub"
-  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  # url = "https://github.com/kakawait"
-# [[menu.links]]
-  # weight = 2
-  # identifier = "stackoverflow"
-  # name = "Stack Overflow"
-  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
-  # url = "https://stackoverflow.com/users/636472/kakawait"
+[[menu.links]]
+  weight = 1
+  identifier = "linkedin"
+  name = "LinkedIN"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  url = "https://in.linkedin.com/in/anbuchelva"
+[[menu.links]]
+  weight = 2
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  url = "https://github.com/anbuchelva"
+[[menu.links]]
+  weight = 3
+  identifier = "envelope"
+  name = "Email"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
+  url = "mailto:email@anbuchelva.in"
+[[menu.links]]
+  weight = 4
+  identifier = "keybase"
+  name = "Keybase"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-key\"></i>"
+  url = "https://keybase.io/anbuchelva"
+[[menu.links]]
+  weight = 5
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  url = "https://twitter.com/anbuchelva"
+[[menu.links]]
+  weight = 6
+  identifier = "telegram"
+  name = "Telegram"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-telegram\"></i>"
+  url = "https://t.me/anbuchelva"
 
 # [[menu.misc]]
   # weight = 1
@@ -139,7 +164,7 @@ canonifyurls = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebarBehavior = 2
+  sidebarBehavior = 1
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly

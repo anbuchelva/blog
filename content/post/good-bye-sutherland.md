@@ -8,6 +8,7 @@ comments= true
 thumbnailimage = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMT_6zvo1g_m2FVBu8p-TE9BughPD8yQHQa4h4lxuDwPdUTNm"
 thumbnailImagePosition = "right"
 TOC = true
+url = "/work/good-bye-sutherland"
 +++
 
 I'm completing 8+ years of journey with [Sutherland](https://www.linkedin.com/company/sutherland-global-services) today, which is the longest stint of my career in any organization that I worked. It looks like I have spent a long period here, but feels like short. <!--more--> I would say that,
@@ -40,8 +41,9 @@ Thanks to the Business Controllers and FP&A group, who are the primary customers
 I am thankful to everyone in this organization for providing me opportunity and work.  I apologize if I have hurt you at any time.  
 
 # Contact Details
-I would be happy if we keep in touch; you may contact me by 
-* The traditional way by sending an email to sutherland@anbuchelva.in
+I would be happy if we keep in touch; you may contact me by  
+
+* The traditional way by sending an email to [sutherland@anbuchelva.in](mailto:sutherland@anbuchelva.in)
 * You wish to follow my career updates send a connection request at [LinkedIn](https://www.linkedin.com/in/anbuchelva)  
 * Looking for immediate response send a [Telegram](https://t.me/anbuchelva)  
 * Looking for sending a confidential message? use [Keybase](https://keybase.io/anbuchelva) to get my public keys.  
