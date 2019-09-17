@@ -14,7 +14,7 @@
 
 baseURL = "/"
 languageCode = "en-IN"
-defaultContentLanguage = "en-IN"
+defaultContentLanguage = "en-us"
 title = "anbuchelva's blog"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "anbu-blog"

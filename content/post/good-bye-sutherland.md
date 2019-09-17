@@ -1,22 +1,23 @@
----
-title: Good Bye Sutherland!
-date: 2019-01-18T07:54:25.520Z
-updated: 2019-01-18T07:54:25.590Z
-category:
-  - work
-tags:
-  - Sutherland
-comments: true
----
-I'm completing 8+ years of journey with [Sutherland](https://www.linkedin.com/company/sutherland-global-services) today, which is the longest stint of my career in any organization that I worked. It looks like I have spent a long period here, but feels like short. I would say that,
++++
+title= "Good Bye Sutherland!"
+date= "2019-01-18T07:54:25.520Z"
+# updated: 2019-01-18T07:54:25.590Z
+categories = ["work"]
+tags = ["Sutherland"]
+comments= true
+thumbnailimage = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMT_6zvo1g_m2FVBu8p-TE9BughPD8yQHQa4h4lxuDwPdUTNm"
+thumbnailImagePosition = "right"
+TOC = true
++++
 
-{% cq %} Time passes faster when we are happy and satisfied! {% endcq %}
+I'm completing 8+ years of journey with [Sutherland](https://www.linkedin.com/company/sutherland-global-services) today, which is the longest stint of my career in any organization that I worked. It looks like I have spent a long period here, but feels like short. <!--more--> I would say that,
+
+
+> Time passes faster when we are happy and satisfied!
 
 I was part of two different roles both were related to planning; the first one is  Manpower planning, manpower is the most important asset of an outsourcing company and the second one is financial planning using Hyperion Platform, which is crucial than the first one.
-
-<!---more--->
-
-### Manpower Planning Team
+<!-- toc -->
+# Manpower Planning Team
 
 I was hired by [Kannan M](https://www.linkedin.com/in/kannan-meenakshi-sundaram-56a16a1/) and was reporting to [Palaniyappan](https://www.linkedin.com/in/palaniyappan-subramanian-864a8816/) in the initial period.  I learnt how to exactly read data and make projections based on the history. Then later the Manpower Planning team was handed over to [Pammi Rupesh](https://www.linkedin.com/in/pammirupesh/) when it became more dynamic.  It gave more confidence on the projections that I made and to grab opportunities to directly interact with the clients. I'm really thankful to them for the trust that they had in me and pushing me to achieve things.  
 
@@ -24,7 +25,7 @@ There are important people who I interacted on daily basis during Manpower Plann
 
 I made few life time friends here, Muthu, Vinoth, Jai, Dileep, Vijay, Riyaz, Ramky, Samy, Renga, Bala, Mani. It was fun working with you guys!  
 
-### BI-EPM Team
+# BI-EPM Team
 
 I am kind of person to see the results immediately. Planning manpower and seeing the results would take at least 3-6 months time.  I always wanted to work on technical side where I write code and see the results immediately.  
 
@@ -38,7 +39,7 @@ Thanks to the Business Controllers and FP&A group, who are the primary customers
 
 I am thankful to everyone in this organization for providing me opportunity and work.  I apologize if I have hurt you at any time.  
 
-### Contact Details
+# Contact Details
 I would be happy if we keep in touch; you may contact me by 
 * The traditional way by sending an email to sutherland@anbuchelva.in
 * You wish to follow my career updates send a connection request at [LinkedIn](https://www.linkedin.com/in/anbuchelva)  
@@ -48,7 +49,7 @@ I would be happy if we keep in touch; you may contact me by
 Have a wonderful life!  
 Anbuselvan 🖖
 
-{% note default %}
+{{< alert info >}} 
 Sutherland has restrictions in loading the comment module. Please access this page in your personal network rather than Sutherland's network, if you wish to make comments. 
-{% endnote %}
+{{< /alert >}} 
 
