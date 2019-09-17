@@ -1,0 +1,8 @@
+[build]
+  # command = ". deploy.sh"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.57.2"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
