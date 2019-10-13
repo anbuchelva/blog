@@ -51,10 +51,22 @@ Installing Custom ROMs have 2 or more components.
 2. Installing GAPPS
 3. Magisk or other mods
 
-If an user doesn't want to be tracked by Google, they just skip the 2nd option and uses Micro-G or vanilla android, as it is.
+If an user doesn't want to be tracked by Google, they just skip the 2nd option and uses Micro-G or vanilla android.
+
+But the updates are released through Google Play Store, instead of Google's Android's usual distribution method; its not sure how the open source projects will get updates.
+
+Android Developer's blog says
+> Mainline components are still open sourced.
+
+We are not sure, when it will become closed and opened only to the OEMs.
+So my doubts are that,
+
+{% note warning %}
+Google is trying to build a big **Big Wall of Gargen**, so the users can get everything inside their eco system and not allowing the users to go out.
+{% endnote %}
+
+It will be difficult for others to fork android and live without Google's products. We have to wait and see how it goes.
 
 {% note info %}
-
-I'm not an android developer and I use android phones extensively. All these information shared here is my thoughts.
-
+I'm not an android developer and I use android phones extensively. All these information shared here are my thoughts.
 {% endnote %}
