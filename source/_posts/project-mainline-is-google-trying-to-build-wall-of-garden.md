@@ -38,15 +38,16 @@ There are reasons why the OEMs don't provide security updates frequently.
 * **Kill support for old devices to force users to buy new devices.** What happens if the OEMs provide support for 5+ years old devices? An average user would use the device until it became dead. Most of the OEMs abandon support for the older devices and provide support ~2 years. Exceptions: OnePlus, Xiaomi.
 
 ### How to overcome this issue?
+
 So after all these, how we can use a device if it is more than 2 years old and keep up to date with security updates?
 
-* Buy a device which has good developer support, E.g., Pixel, OnePlus, Essential, Xiaomi phones
+* Buy a device which has good developer support, E.g., Pixel, OnePlus, Essential, Xiaomi phones, Asus and Oppo are tyring to join this list now, by donating devices to developers to support.
 * Switch to custom roms such as Lineage OS, once the OEM stop supporting the device. Users get at updates at least once in a month, if the device has good developer support.
 * Make use of your phone's full potential.
 
 ### What is with Project Mainline?
 
-The title and all these above seems irrelevant to the topic. Isn't it?
+The title and all these above seems irrelevant to the topic. Isn't it? No; there's a link.
 
 Installing Custom ROMs have 2 or more components.
 
@@ -54,21 +55,27 @@ Installing Custom ROMs have 2 or more components.
 2. Installing GAPPS
 3. Magisk or other mods
 
-If an user doesn't want to be tracked by Google, they just skip the 2nd option and uses Micro-G or vanilla android.
-
-But the updates are released through Google Play Store, instead of Google's Android's usual distribution method; its not sure how the open source projects will get updates.
+If an user doesn't want to be tracked by Google, they just skip the 2nd option.  But the updates are released through Google Play Store, instead of Google's Android's distribution method - the uers who do not uses Google Play Services will be left with vulnarablities.
 
 Android Developer's blog says
+
 > Mainline components are still open sourced.
 
-We are not sure, when it will become closed and opened only to the OEMs.
+We are not sure, when it will become closed and opened only to the OEMs; its not sure how the open source projects will get updates.
+
+
 So my doubts are that,
 
 {% note warning %}
 Google is trying to build a big **Big Wall of Gargen**, so the users can get everything inside their eco system and not allowing the users to go out.
 {% endnote %}
 
-It will be difficult for others to fork android and live without Google's products. We have to wait and see how it goes.
+It will be difficult for others to fork android and live without Google's products. Users will have left with two options
+
+1. Get Google Play Services, if you want updates
+2. Left with vulnarablities, if you don't want Google Play Services.
+
+We have to wait and see how it goes.
 
 {% note info %}
 I'm not an android developer and I use android phones extensively. All these information shared here are my thoughts.
