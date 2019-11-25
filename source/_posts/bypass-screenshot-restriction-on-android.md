@@ -16,6 +16,7 @@ comments: true
 Taking screenshots is a common activity, a normal user would do in all kind of electronic platforms.  I do not remember having restrictions in taking screenshots on Windows PC.  It used to be similar in [Android](/Android/) platform until Google introduce restrictions from taking a screenshot.
 
 Is there a way to bypass it? Yes!, there are...
+<!---more--->
 
 1. [Root](https://en.wikipedia.org/wiki/Rooting_(Android)) your device, install [Xposed framework](https://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053) - and lose warranty :stuck_out_tongue_winking_eye:
 2. Cast your device to another device, such as windows PC, then take a screenshot on the PC - how complex it is?
