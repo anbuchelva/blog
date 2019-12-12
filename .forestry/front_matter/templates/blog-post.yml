@@ -1,0 +1,35 @@
+---
+label: Blog Post
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: updated
+  label: updated
+- name: draft
+  type: boolean
+  label: draft
+  default: true
+- type: tag_list
+  name: category
+  label: category
+- type: tag_list
+  name: tags
+  label: tags
+- type: tag_list
+  name: keywords
+  label: keywords
+- type: boolean
+  name: comments
+  label: comments
+  default: true
+- name: toc
+  type: boolean
+  label: Table of Contents
+  default: true

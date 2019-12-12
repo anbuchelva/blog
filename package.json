@@ -5,6 +5,14 @@
   "hexo": {
     "version": "3.9.0"
   },
+  "scripts": {
+    "build": "hexo generate",
+    "deploy": "hexo deploy",
+    "start": "hexo server --config _config.yml",
+    "preview": "hexo server -p --draft 8080",
+    "new": "hexo new post",
+    "pretest": "NODE_ENV=production npm run build"
+  },
   "dependencies": {
     "braces": "^3.0.2",
     "hexo": "^3.9.0",

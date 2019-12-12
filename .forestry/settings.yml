@@ -1,0 +1,34 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: document
+  path: source/about/index.md
+  label: about
+- type: directory
+  path: source/_posts
+  label: Post
+  create: none
+  match: "*.md"
+  templates:
+  - blog-post
+- type: directory
+  path: source/_drafts
+  label: Draft
+  create: documents
+  match: "*.md"
+  templates:
+  - blog-post
+upload_dir: images
+public_path: https://res.cloudinary.com/anbuchelva/image/upload
+front_matter_path: https://res.cloudinary.com/anbuchelva/image/images
+use_front_matter_path: true
+file_template: ":filename:"
+build:
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run preview
