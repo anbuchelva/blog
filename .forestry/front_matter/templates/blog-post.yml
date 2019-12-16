@@ -33,3 +33,5 @@ fields:
   type: boolean
   label: Table of Contents
   default: true
+pages:
+- source/_drafts/sample-post-from-forestry-io.md
