@@ -6,7 +6,7 @@
     "version": "3.9.0"
   },
   "scripts": {
-    "build": "hexo generate",
+    "build": "chmod +x .forestry/draft.sh && ./.forestry/draft.sh",
     "deploy": "hexo deploy",
     "start": "hexo server --config _config.yml",
     "preview": "hexo server --draft --port 8080",
