@@ -23,7 +23,7 @@ I used use,
 
 1. Text editor for writing & terminal for building process
 2. Netlify CMS - an open sourced content management system
-3. Now trying \[forestry.io\](https://forestry.io) as CMS for this hexo blog.
+3. Now trying [forestry.io](https://forestry.io "Forestry.IO") as CMS for this hexo blog.
 
 <!---more--->
 
