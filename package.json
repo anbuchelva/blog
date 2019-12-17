@@ -9,7 +9,7 @@
     "build": "hexo generate",
     "deploy": "hexo deploy",
     "start": "hexo server --config _config.yml",
-    "preview": "hexo server -p --draft 8080",
+    "preview": "hexo server --draft --port 8080",
     "new": "hexo new post",
     "pretest": "NODE_ENV=production npm run build"
   },
