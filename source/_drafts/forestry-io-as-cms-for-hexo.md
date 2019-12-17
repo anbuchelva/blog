@@ -29,6 +29,6 @@ I used use,
 
 {% note info %}
 
-I have written how to {% post_link integrate-netlify-cms-with-hexo %} previously.  You may refer this post, which will useful to understand the CMS on hexo platform.
+There is a post that explains how to {% post_link integrate-netlify-cms-with-hexo %}.  You may refer it, which will be useful to understand the CMS on hexo platform.
 
 {% endnote %}
