@@ -159,3 +159,9 @@ I would like to add all the snippets, which are used in Hexo Next theme, so that
 
 Thanks for reading this post.  
 Wishing everyone Merry Christmas :christmas_tree: :santa: and a Happy New Year 2020! :tada:
+
+{% note info %}
+
+Please make a PR, if you feel that this can be done in a better way. I am happy to make it easy.
+
+{% endnote %}
