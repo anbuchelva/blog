@@ -162,6 +162,6 @@ Wishing everyone Merry Christmas :christmas_tree: :santa: and a Happy New Year 2
 
 {% note info %}
 
-Please make a PR, if you feel that this can be done in a better way. I am happy to make it easy.
+Please make a PR, if you feel that this can be done in a better way. I am happy to make it easy for everyone.
 
 {% endnote %}
