@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 comments: true
 toc: true
 title: Forestry.io as CMS for Hexo
