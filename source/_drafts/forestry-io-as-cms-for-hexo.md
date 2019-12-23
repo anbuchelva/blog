@@ -108,7 +108,7 @@ Forestry doesn't do any magic, on git. It just takes the repo & branch which was
 
 Each time you hit save button, while writing a blog post it commits to git repo. Since, Hexo is not officially supported by forestry, there is no inbuilt ON/OFF buttons available to stop draft posts getting published.
 
-It is bit annoying, as my site is configured to build automatically for each commit and I don't want to display half written posts to my visitors.
+It is bit annoying, as my site is configured to build automatically for each commit and I don't want to display half written posts to my visitors. (yes! there is an option available in netlify build sttings to stop auto deploying builds - which I don't want to modify for each builds!)
 
 I feel netlify-cms was done well in this aspect, which creates a pull request and it merge the PR, only when I hit publish.
 
