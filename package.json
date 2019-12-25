@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "braces": "^3.0.2",
+    "disqusjs": "^1.2.6",
     "hexo": "^3.9.0",
     "hexo-filter-optimize": "^0.2.7",
     "hexo-generator-archive": "^0.1.5",
