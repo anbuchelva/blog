@@ -1,22 +1,22 @@
 ---
 title: Forestry.io as CMS for Hexo
 category:
-  - blog
+- blog
 tags:
-  - blog
-  - hexo
-  - cms
+- blog
+- hexo
+- cms
 keywords:
-  - forestry
-  - netlify
-  - hexo
+- forestry
+- netlify
+- hexo
 comments: true
 draft: false
 toc: true
-date: 2019-12-23 19:37:00
-updated: 2019-12-23 19:37:00
----
+date: 2019-12-23T19:37:00.000+00:00
+updated: 2019-12-25T17:52:00+05:30
 
+---
 There are many ways to write and publish blog posts, when it comes to git backed static websites.  I started with text editor for writing, terminal for building, then push it to [Github pages](https://pages.github.com/) for publishing.  Then I started using [Netlify ](https://app.netlify.com)for building static pages, but was still using text editor and terminal locally.
 
 One fine day, I set up Netlify CMS for content management, as I wanted it to write in any PC, which do not have git & npm installed. I tried [forestry.io](https://forestry.io) for writing posts for Jekyll & Hugo (during my initial testing to decide which static site platform to choose).  But I couldn't make it work for [Hexo](https://hexo.io) during the initial times.
@@ -104,11 +104,11 @@ forestry stopped supporting deployment for sometime :pensive:.  So, have to use 
 
 ### How it works?
 
-Forestry doesn't do any magic, on git. It just takes the repo & branch which was configured at the beginning and commit the changes directly into the Repository Branch.
+Forestry doesn't do any magic on git. It just takes the repo & branch which was configured at the beginning and commit the changes directly into the Repository Branch.
 
 Each time you hit save button, while writing a blog post it commits to git repo. Since, Hexo is not officially supported by forestry, there is no inbuilt ON/OFF buttons available to stop draft posts getting published.
 
-It is bit annoying, as my site is configured to build automatically for each commit and I don't want to display half written posts to my visitors. (yes! there is an option available in netlify build sttings to stop auto deploying builds - which I don't want to modify for each builds!)
+It is bit annoying, as my site is configured to build automatically for each commit and I don't want to display half written posts to my visitors. (yes! there is an option available in netlify build settings to stop auto deploying builds - which I don't want to modify for each builds!)
 
 I feel netlify-cms was done well in this aspect, which creates a pull request and it merge the PR, only when I hit publish.
 
@@ -123,21 +123,21 @@ When the draft is set to OFF, the script moves the post from _drafts to _posts f
 my shell script is [here](https://github.com/anbuchelva/blog/blob/source/.forestry/draft.sh) (i'm not an expert in writing shell)
 
 {% code %}
-for file in source/_drafts/*.md; do	
-	if head -20 "$file" | grep -Fiqx "draft: false"
-		then
-			mv "$file" "source/_posts/"
-			echo "Publishing $(basename "$file") from draft"
-		else
-			echo "Keeping $(basename "$file") in draft"
-	fi
+for file in source/_drafts/_.md; do	
+if head -20 "$file" | grep -Fiqx "draft: false"
+then
+mv "$file" "source/_posts/"
+echo "Publishing $(basename "$file") from draft"
+else
+echo "Keeping $(basename "$file") in draft"
+fi
 done
-for file in source/_posts/*.md; do
-	if head -20 "$file" | grep -Fiqx "draft: true"
-		then
-			mv "$file" "source/_drafts/"
-			echo "Revoke publish post $(basename "$file") to draft"
-	fi
+for file in source/_posts/_.md; do
+if head -20 "$file" | grep -Fiqx "draft: true"
+then
+mv "$file" "source/_drafts/"
+echo "Revoke publish post $(basename "$file") to draft"
+fi
 done
 echo "Clean database"
 hexo clean
@@ -157,10 +157,18 @@ I would like to add all the snippets, which are used in Hexo Next theme, so that
 2. Start supporting tables in wysiwyg editor
 3. Fix small bugs in handling codes in the editor.
 
+### What is the difference compared to Netlify CMS?
+
+1. Netlify CMS requires many steps like configuring admin folder, enable identity services, give yourself permission, etc., which would be difficult for some people. I feel configuring and using forestry is easy. 
+2. The preview builds are faster than Netlify.
+3. Forestry can be used in mobile phones, whereas Netlify CMS works only on desktop computers.
+4. Need not to build admin panel with site in Forestry, whereas it is mandatory in Netlify CMS. Removing `<head>` and `<body>` codes of Netlify CMS, increases Google Page speed slightly.
+5. The only downside I see from Forestry is that it commits the changes directly to git repo, whereas Netlify CMS creates a pull request (if github is used as git provider) for each post. This is best way to maintain draft posts.  
+
 Thanks for reading this post.  
 Wishing everyone Merry Christmas :christmas_tree: :santa: and a Happy New Year 2020! :tada:
 
-{% note info %}
+{% note default %}
 
 Please make a PR, if you feel that this can be done in a better way. I am happy to make it easy for everyone.
 

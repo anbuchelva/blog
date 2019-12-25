@@ -33,5 +33,3 @@ fields:
   type: boolean
   label: Table of Contents
   default: true
-pages:
-- source/_drafts/forestry-io-as-cms-for-hexo.md
