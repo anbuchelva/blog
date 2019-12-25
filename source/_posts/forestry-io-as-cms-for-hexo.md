@@ -1,22 +1,22 @@
 ---
-draft: false
-comments: true
-toc: true
 title: Forestry.io as CMS for Hexo
-date: 2019-12-24T01:07:00+05:30
-updated: 
 category:
-- blog
+  - blog
 tags:
-- blog
-- hexo
-- cms
+  - blog
+  - hexo
+  - cms
 keywords:
-- forestry
-- netlify
-- hexo
-
+  - forestry
+  - netlify
+  - hexo
+comments: true
+draft: false
+toc: true
+date: 2019-12-23 19:37:00
+updated: 2019-12-23 19:37:00
 ---
+
 There are many ways to write and publish blog posts, when it comes to git backed static websites.  I started with text editor for writing, terminal for building, then push it to [Github pages](https://pages.github.com/) for publishing.  Then I started using [Netlify ](https://app.netlify.com)for building static pages, but was still using text editor and terminal locally.
 
 One fine day, I set up Netlify CMS for content management, as I wanted it to write in any PC, which do not have git & npm installed. I tried [forestry.io](https://forestry.io) for writing posts for Jekyll & Hugo (during my initial testing to decide which static site platform to choose).  But I couldn't make it work for [Hexo](https://hexo.io) during the initial times.
