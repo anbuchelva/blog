@@ -1,14 +1,22 @@
-name: CI
-
-on: [push]
-
+on: push
+name: Deploy
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1        
-    - name: GitHub Action for hexo
-      uses: heowc/action-hexo@1.0.2
-
+    - name: Clean
+      uses: heowc/action-hexo@master
+      with:
+        args: clean
+    - name: Generate
+      uses: heowc/action-hexo@master
+      with:
+        args: generate
+    # - name: Deploy
+      # uses: heowc/action-hexo@master
+      # env:
+        # EMAIL: input emial ...
+        # NAME: input name ...
+      # with:
+        # args: deploy
