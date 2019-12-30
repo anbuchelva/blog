@@ -14,10 +14,10 @@ comments: true
 draft: false
 toc: true
 date: 2019-12-23T19:37:00.000+00:00
-updated: 2019-12-25T17:52:00+05:30
+updated: 2019-12-25T12:22:00.000+00:00
 
 ---
-There are many ways to write and publish blog posts, when it comes to git backed static websites.  I started with text editor for writing, terminal for building, then push it to [Github pages](https://pages.github.com/) for publishing.  Then I started using [Netlify ](https://app.netlify.com)for building static pages, but was still using text editor and terminal locally.
+There are many ways to write and publish blog posts, when it comes to git backed static websites.  I started with text editor for writing, terminal for building, then push it to [Github pages](https://pages.github.com/) for publishing.  Then I started using [Netlify](https://app.netlify.com) for building static pages, but was still using text editor and terminal locally.
 
 One fine day, I set up Netlify CMS for content management, as I wanted it to write in any PC, which do not have git & npm installed. I tried [forestry.io](https://forestry.io) for writing posts for Jekyll & Hugo (during my initial testing to decide which static site platform to choose).  But I couldn't make it work for [Hexo](https://hexo.io) during the initial times.
 
