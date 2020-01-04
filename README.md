@@ -10,4 +10,4 @@ This is my personal blog. I use the following services in order to run it.
 * Posts are mostly written in [Forestry.IO](https://forestry.io/) or [Netlify-CMS](https://www.netlifycms.org/) for free of cost.  
 
 # Netlify Build Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7a6bf6a6-7d08-46cf-8d32-508642c20670/deploy-status)](https://app.netlify.com/sites/anbu-blog/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a6bf6a6-7d08-46cf-8d32-508642c20670/deploy-status)](https://app.netlify.com/sites/anbu-blog/deploys) [![Greenkeeper badge](https://badges.greenkeeper.io/anbuchelva/blog.svg)](https://greenkeeper.io/)
