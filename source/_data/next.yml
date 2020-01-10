@@ -578,7 +578,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: disqusjs
+  active: disqus
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Modify texts or order for any navs, here are some examples.
@@ -591,8 +591,8 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
-  shortname: 
+  enable: true
+  shortname: anbu-blog
   count: true
   lazyload: true
   #post_meta_order: 0
@@ -602,7 +602,7 @@ disqus:
 # Demo: https://suka.js.org/DisqusJS/
 # For more information: https://github.com/SukkaW/DisqusJS
 disqusjs:
-  enable: true
+  enable: false
   # API Endpoint of Disqus API (https://disqus.com/api/).
   # Leave api empty if you are able to connect to Disqus API.
   # Otherwise you need a reverse proxy for Disqus API.
@@ -961,10 +961,10 @@ vendors:
   #quicklink:
 
   # DisqusJS
-  disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  #disqusjs_js:
-  #disqusjs_css:
+  #disqusjs_js: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  #disqusjs_css: //cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  disqusjs_js:
+  disqusjs_css:
 
   # Valine
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
@@ -1002,12 +1002,12 @@ vendors:
   velocity_ui:
 
   # Internal version: 1.0.2
-  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  #pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
-  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
+  #pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
-  # pace:
-  # pace_css:
+  pace:
+  pace_css:
 
   # Internal version: 1.0.0
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
