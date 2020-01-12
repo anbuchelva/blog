@@ -1,0 +1,92 @@
+{{ if .Site.Params.scrollPagination }}
+  {{ if .Paginator.HasNext }}
+    <div class="scroll-bar" id="show-more-button">
+        <span class="btn btn--default btn--big pagination-next">
+          Load more...
+        </span>
+    </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        var lastPageLoaded = {{ .Paginator.PageNumber }};
+        var totalPages = {{ .Paginator.TotalPages }};
+
+        // Remove button if there is no more pages
+        if (lastPageLoaded === totalPages) {
+          document.getElementById('show-more-button').remove();
+        }
+
+        document.getElementById('show-more-button').onclick = async () => {
+          lastPageLoaded = lastPageLoaded + 1;
+
+          // Get next page
+          var url = '{{ .Permalink }}' + 'page/' + lastPageLoaded + "/";
+          var results = await fetch(url);
+          var htmlText = await results.text();
+
+          // Parse next page and get posts
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(htmlText, 'text/html');
+          var posts = doc.querySelectorAll('article');
+
+
+          // Append new posts
+          var postList = document.getElementsByClassName('postShorten-group main-content-wrap')[0];
+          var button = document.getElementById('show-more-button');
+          for (var post of posts) {
+            postList.insertBefore(post, button);
+          }
+
+          // Remove button if there is no more pages
+          if (lastPageLoaded === totalPages) {
+            button.remove();
+          }
+        };
+      });
+    </script>
+  {{ end }}
+{{ else }}
+  {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+    <div class="pagination-bar">
+      <ul class="pagination">
+        {{ if .Site.Params.swapPaginator }}
+          {{ if .Paginator.HasPrev }}
+            <li class="pagination-prev">
+              <a class="btn btn--default btn--small" href="{{ .Paginator.Prev.Permalink }}">
+                <i class="fa fa-angle-left text-base icon-mr"></i>
+                <span>{{ i18n "pagination.older_posts" }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Paginator.HasNext }}
+            <li class="pagination-next">
+              <a class="btn btn--default btn--small" href="{{ .Paginator.Next.Permalink }}">
+                <span>{{ i18n "pagination.newer_posts" }}</span>
+                <i class="fa fa-angle-right text-base icon-ml"></i>
+              </a>
+            </li>
+          {{ end }}
+        {{ else }}
+          {{ if .Paginator.HasPrev }}
+            <li class="pagination-prev">
+              <a class="btn btn--default btn--small" href="{{ .Paginator.Prev.Permalink }}">
+                <i class="fa fa-angle-left text-base icon-mr"></i>
+                <span>{{ i18n "pagination.newer_posts" }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Paginator.HasNext }}
+            <li class="pagination-next">
+              <a class="btn btn--default btn--small" href="{{ .Paginator.Next.Permalink }}">
+                <span>{{ i18n "pagination.older_posts" }}</span>
+                <i class="fa fa-angle-right text-base icon-ml"></i>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        <li class="pagination-number">{{ i18n "pagination.page" . }} {{ i18n "pagination.of" . }}</li>
+      </ul>
+    </div>
+  {{ end }}
+  {{ end }}
