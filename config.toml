@@ -13,7 +13,7 @@
 # use grunt task `build` to synchronize assets
 
 baseURL = "/"
-languageCode = "en-IN"
+languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "anbuchelva's blog"
 theme = "hugo-tranquilpeak-theme"
@@ -21,7 +21,14 @@ disqusShortname = "anbu-blog"
 # googleAnalytics = "UA-123-45"
 paginate = 6
 canonifyurls = true
-# relativeURLs = true
+removePathAccents = true
+copyright = "CC BY NC SA 4.0 || https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+# https://gohugo.io/getting-started/configuration-markup#goldmark
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [permalinks]
   post = "/:slug/"
@@ -34,15 +41,15 @@ canonifyurls = true
 [author]
   name = "Anbuselvan Palaniyandi"
   bio = "an EPM Consultant and an Android Enthusiast"
-  #job = "Your job title"
-  #location = "France"
+  job = "Manager @ Standard Chartered Bank"
+  location = "Chennai, India"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "anbuchelva@gmail.com"
+  # gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  # picture = "https://res.cloudinary.com/tamildroid/image/upload/v1567346576/images/tamildroid_zfed86.jpg"
+  picture = "https://res.cloudinary.com/anbuchelva/image/upload/v1570369637/images/anbuchelva/anbuchelva.jpg"
   # Your Twitter username without the @. E.g : thibaudlepretre
-  # twitter = "thibaudlepretre"
+  twitter = "anbuchelva"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   # googlePlus = "+ThibaudLepretre"
 
@@ -55,8 +62,8 @@ canonifyurls = true
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "category"
-  name = "Tategories"
+  identifier = "categories"
+  name = "Categories"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
   url = "/categories"
 [[menu.main]]
@@ -67,66 +74,48 @@ canonifyurls = true
   url = "/tags"
 [[menu.main]]
   weight = 4
-  identifier = "Archive"
+  identifier = "archives"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
-[[menu.main]]
-  weight = 5
-  identifier = "About"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/about"
-[[menu.main]]
-  weight = 7
-  identifier = "RSS"
-  name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
-  url = "/index.xml"
+# [[menu.main]]
+  # weight = 5
+  # identifier = "about"
+  # name = "About"
+  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  # url = "/about"
 
 [[menu.links]]
   weight = 1
+  identifier = "email"
+  name = "Contact"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
+  url = "mailto:email@anbuchelva.in"
+[[menu.links]]
+  weight = 2
   identifier = "linkedin"
   name = "LinkedIN"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
   url = "https://in.linkedin.com/in/anbuchelva"
 [[menu.links]]
-  weight = 2
-  identifier = "github"
-  name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/anbuchelva"
-[[menu.links]]
   weight = 3
-  identifier = "envelope"
-  name = "Email"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
-  url = "mailto:email@anbuchelva.in"
-[[menu.links]]
-  weight = 4
-  identifier = "keybase"
-  name = "Keybase"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-key\"></i>"
-  url = "https://keybase.io/anbuchelva"
-[[menu.links]]
-  weight = 5
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/anbuchelva"
-[[menu.links]]
-  weight = 6
-  identifier = "telegram"
-  name = "Telegram"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-telegram\"></i>"
-  url = "https://t.me/anbuchelva"
+# [[menu.links]]
+  # weight = 4
+  # identifier = "github"
+  # name = "GitHub"
+  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  # url = "https://github.com/anbuchelva"
 
-# [[menu.misc]]
-  # weight = 1
-  # identifier = "rss"
-  # name = "RSS"
-  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
-  # url = "/index.xml"
+[[menu.misc]]
+  weight = 0
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
 
 [params]
   # Customize date format use to render blog post date, categories and other
@@ -147,9 +136,9 @@ canonifyurls = true
 
   # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo".
   # If false it will flat categories.
-  hierarchicalCategories = true
+  hierarchicalCategories = false
 
-  description = "The Simplest Thing That Could Possibly Work"
+  description = "personal blog of Anbuselvan Palaniyandi"
 
   # Customization
   # Define the behavior of the sidebar
@@ -164,7 +153,7 @@ canonifyurls = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebarBehavior = 1
+  sidebarBehavior = 2
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
@@ -172,7 +161,7 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
-  coverImage = "https://res.cloudinary.com/tamildroid/image/upload/v1567346576/images/sidebar_dkgaaz.jpg"
+  coverImage = "black-small.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
@@ -187,9 +176,15 @@ canonifyurls = true
   # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
   # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
   autoThumbnailImage = true
+  
+  # Pagination configuration
+  # Default pagination is with classic <PREV NEXT> buttons.
+  # Enabling scrollPagination creates an infinite scroll for your posts
+  # scrollPagination = false
+  scrollPagination = true
 
   # Your favicon path, default is "/favicon.png"
-  # favicon = "/favicon.png"
+  favicon = "https://res.cloudinary.com/anbuchelva/image/upload/v1570369637/images/anbuchelva/anbuchelva.jpg"
 
   # Header configuration
   # The link at the right of the header is customizable
@@ -201,12 +196,13 @@ canonifyurls = true
 
   # Display `Next` on left side of the pagination, and `Prev` on right side one.
   # If you set this value to `true`, these positions swap.
-  # swapPaginator = true
+  swapPaginator = true
 
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
-  # [[params.customCSS]]
-  #   href = "css/mystyle.css"
+  [[params.customCSS]]
+  href = "css/my-custom.css"
+    # href = "css/mystyle.css"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
@@ -242,5 +238,5 @@ canonifyurls = true
     url = "/index.html"
 
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  # [params.footer]
-  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  [params.footer]
+    copyright = "<a href=\"https://github.com/anbuchelva\">anbuchelva</a>"
