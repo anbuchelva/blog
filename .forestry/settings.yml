@@ -1,0 +1,26 @@
+---
+new_page_extension: md
+auto_deploy: true
+admin_path: admin
+webhook_url: 
+sections:
+- type: directory
+  path: content/post
+  label: Post
+  create: documents
+  match: "*"
+  templates:
+  - post
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+upload_dir: uploads
+public_path: https://res.cloudinary.com/anbuchelva/image/upload
+front_matter_path: https://res.cloudinary.com/anbuchelva/image/images
+use_front_matter_path: true
+file_template: ":filename:"
+build:
+  output_directory: public
+version: '0.52'
