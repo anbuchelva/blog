@@ -4,7 +4,7 @@ date: 2017-11-15 22:38:50
 updated: 2017-11-15 22:38:50
 tags:
   - thoughts
-category:
+categories:
   - general
 comments: true
 ---

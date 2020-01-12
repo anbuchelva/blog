@@ -2,7 +2,7 @@
 title: GitHub Offers Unlimited Free Private Repositories
 date: 2019-01-08T06:19:16.047Z
 updated: 2019-01-08T06:19:16.110Z
-category:
+categories:
   - git
 tags:
   - git
@@ -13,7 +13,7 @@ keywords:
   - gitlab
   - private repositories
 comments: true
-thumbnailimage: "https://image.flaticon.com/icons/png/512/36/36686.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_200/v1578787699/images/github_private_repo/36686_1.png"
 url: "/git/github-offers-unlimited-free-private-repositories/"
 ---
 Starting today [GitHub](https://github.com/) offers unlimited free private repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
@@ -27,7 +27,7 @@ There will be Pros and Cons on this change.
 
 Creating new repository has an option to choose between Private and Public, which is very simple.
 
-To make an existing repo private, go to {% label @Settings %} of the repository and scroll to the bottom where the {% label @Danger Zone %} exists and select the option to make the repository private.
+To make an existing repo private, go to `Settings` of the repository and scroll to the bottom where the `Danger Zone` exists and select the option to make the repository private.
 
 ![github_Private_repo_danger_zone](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_danger_zone.png)
 

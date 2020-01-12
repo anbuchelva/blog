@@ -2,7 +2,7 @@
 title: Blogging in the Hard Way
 date: 2018-06-01T08:49:00.000Z
 updated: 2018-06-23T08:49:00.000Z
-category:
+categories:
   - blog
 tags:
   - hexo
@@ -19,6 +19,7 @@ keywords:
   - Github Pages
   - Hexo Next Theme
 toc: true
+thumbnailimage: "https://avatars3.githubusercontent.com/u/29385237?s=280&v=4"
 ---
 I have started this blog in last November, after that I did not write anything, as like the way it happens every time.  We start something and forget, until we make it as routine.  Meanwhile, I was doing some analysis and checks, etc on the blogging platform.  Like to share the same here..
 <!---more--->

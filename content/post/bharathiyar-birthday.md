@@ -5,14 +5,17 @@ updated: 2018-12-11 12:26:52
 tags:
   - tamil
   - poem
-category:
+categories:
   - general
 keywords:
   - bharathiyar
   - tamil
   - kavithai
   - thedi soru thinam thindru
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg"
+url: "general/bharathiyar-birthday/"
 ---
+<!--more-->
 ![Bharathi](https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg)
 
 தேடிச் சோறுநிதந் தின்று - பல  

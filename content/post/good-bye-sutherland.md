@@ -6,7 +6,7 @@ categories = ["work"]
 tags = ["Sutherland"]
 comments= true
 thumbnailimage = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMT_6zvo1g_m2FVBu8p-TE9BughPD8yQHQa4h4lxuDwPdUTNm"
-thumbnailImagePosition = "right"
+# thumbnailImagePosition = "right"
 TOC = true
 url = "/work/good-bye-sutherland"
 +++

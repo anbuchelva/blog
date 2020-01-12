@@ -2,7 +2,7 @@
 title: Bypass Screenshot Restriction on Android
 date: 2018-10-24T12:32:27.000Z
 updated: 2019-09-09T17:41:00.000Z
-category:
+categories:
   - android
 tags:
   - android
@@ -12,6 +12,7 @@ keywords:
   - non root
   - without xposed
 comments: true
+thumbnailimage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GfmWTlsAiMMxiLINBBnVXZSWUf5DhqkXTVUAYRJ5OA3XHGpBqg&s"
 ---
 Taking screenshots is a common activity, a normal user would do in all kind of electronic platforms.  I do not remember having restrictions in taking screenshots on Windows PC.  It used to be similar in [Android](/Android/) platform until Google introduce restrictions from taking a screenshot.
 

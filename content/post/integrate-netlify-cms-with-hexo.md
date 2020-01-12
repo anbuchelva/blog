@@ -2,7 +2,7 @@
 title: "Integrate Netlify-CMS with Hexo"
 date: 2019-01-08T13:01:15.653Z
 updated: 2019-01-10T23:30:15.728Z
-category:
+categories:
   - blog
 tags:
   - hexo
@@ -13,7 +13,8 @@ keywords:
   - netlify
   - netlify-cms
 comments: true
-thumbnailimage: "https://www.netlify.com/img/press/logos/logomark.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_200/v1578787447/images/netlify-cms/logomark_1.png"
+
 url: "/blog/integrate-netlify-cms-with-hexo/"
 ---
 **Why Content Management System is needed for writing blogs?**  
@@ -111,8 +112,7 @@ Create a folder called`admin` under the source folder and add the following two 
 ### index.html
 This file is used for displaying the content management system. Copy the following code and put it in`index.html` file, without making any changes.
 
-{{< codeblock "index.html" "source/admin/index.html" >}}
-<!doctype html>
+{{< codeblock "index.html" "index.html" >}}<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -126,11 +126,10 @@ This file is used for displaying the content management system. Copy the followi
 </html>
 {{< /codeblock >}}
 
-### config.yml
+### config.yml  
 This file is used to configure the [Front-matter](https://hexo.io/docs/front-matter) of the blog posts.  There are few modifications needed on the code, based on your requirement.
 
-``` source/admin/config.yml
-backend:
+{{< codeblock "config.yml " "config.yml" >}}backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
 
@@ -154,12 +153,12 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-```
+{{< /codeblock >}}
 
 I have tried explaining each part of the above code, which may helpful.
 
-| parameter | description | 
-| - | - |
+|Parameter |Description |
+|---|---|
 |`name` | Keep it default as`git-gateway` unless you want to enable [different authentication backends](https://www.netlifycms.org/docs/authentication-backends/) |
 |`branch` | Update the`branch` name where the site contents / source code is saved. |
 | publish_mode:  editorial_workflow | Refer this [link](https://www.netlifycms.org/docs/configuration-options/#publish-mode) for detailed explanation. Editorial Workflow works only for GitHub as of now. Comment or delete this line if you are using other hosts such as GitLab or BitBucket. |
@@ -180,9 +179,7 @@ You might have used`hexo g` or`hexo generate` command to build the site. Though,
 
 ### Fixing Bug in rendering CMS Admin
 I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the`source/admin/config.yml` is renamed as`public/admin/config.json` with some modification after building the site. This can be fixed by adding admin folder contents in the`skip_render` option of hexo`config.yml` file.
-{{< codeblock "config.yml" "config.yml" >}}
-skip_render: admin/*
-{{< /codeblock >}}
+{{< codeblock "config.yml" "config.yml" >}} skip_render: admin/* {{< /codeblock >}}
 
 ### Configure netlify.toml for Building Sites
 
@@ -192,8 +189,7 @@ This section is optional one.
 
 You can add build commands in the Site settings of Netlify page.  However, you may configure additional steps by creating`netlify.toml` file in the root of the site folder.
 
-{{< codeblock "netlify.toml" "netlify.toml" >}}
-[build]
+{{< codeblock "netlify.toml" "netlify.toml" >}} [build]
   publish = "public/"
   command = "hexo clean && hexo g"
   environment = {NODE_ENV = "8.10.0"}

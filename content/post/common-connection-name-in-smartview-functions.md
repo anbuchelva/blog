@@ -2,7 +2,7 @@
 title: Common Connection Name in Smartview Functions
 date: 2018-08-31T14:37:00.000Z
 updated: 2018-08-31T14:37:00.000Z
-category:
+categories:
   - Hyperion
 tags:
   - hyperion planning
