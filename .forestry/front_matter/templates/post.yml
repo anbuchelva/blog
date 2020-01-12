@@ -1,7 +1,6 @@
 ---
 label: Post
 hide_body: false
-is_partial: false
 fields:
 - type: select
   name: author
@@ -92,4 +91,3 @@ fields:
   name: comments
   label: Comments
   description: Do you want to allow the visitiors to comment this post?
-pages:
