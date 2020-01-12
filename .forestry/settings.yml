@@ -22,5 +22,7 @@ front_matter_path: https://res.cloudinary.com/anbuchelva/image/images
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  output_directory: public
-version: '0.52'
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  instant_preview_command: npm run forestry:preview
