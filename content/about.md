@@ -2,7 +2,7 @@
 title = "About"
 description = ""
 date = "2020-01-12"
-aliases = ["about-me","contact"]
+# aliases = ["about-me","contact"]
 author = "Anbuselvan Palaniyandi"
 +++
 > This page is under construction!
