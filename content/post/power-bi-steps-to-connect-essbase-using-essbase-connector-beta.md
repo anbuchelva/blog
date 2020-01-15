@@ -18,18 +18,16 @@ url: "Hyperion/power-bi-steps-to-connect-essbase-using-essbase-connector-beta/"
 There is a request from the Essbase & Power BI community to provide an official connector for connecting Essbase from Power BI.  It started exactly 4 years back and Microsoft was delaying it for long time.  Finally on Nov 7, 2018 the request has been taken care and moved from **under review** to **backlog** status.
 
 Few days back we got our first beta version of the connector as well, with a warning
-
+<!--more-->
 {{< alert warning >}}
 The Essbase Connector is still under development. Please try it out and give us feedback. We can't guarantee it will work the same way in the final version. Future changes may cause your queries to be incompatible.
 {{< /alert >}}
 
 Though, I wanted to give a try.
 
-<!---more--->
-
 ### Essbase Connector
 
-The connector is listed under the **Database** tab when we select **Get Data** or you may search for {% label @Essbase %} on the search box.  Selecting Essbase and clicking _connect_ would take us to the next window, which requires us to provide the **Essbase** server details.
+The connector is listed under the **Database** tab when we select **Get Data** or you may search for `Essbase` on the search box.  Selecting Essbase and clicking _connect_ would take us to the next window, which requires us to provide the **Essbase** server details.
 
 ### Essbase Server Connection String
 
@@ -49,11 +47,11 @@ Clicking _OK_ would take us to the basic login screen, where we need to provide 
 
 ### Navigator
 
-The Navigator screen displays the list of applications available in the server. Expanding an application displays the plan types in a format of {% label @application name.plantype %}.  
+The Navigator screen displays the list of applications available in the server. Expanding an application displays the plan types in a format of `application name.plantype`.  
 
 ![Power BI Essbase Connector](https://res.cloudinary.com/anbuchelva/image/upload/v1546937989/images/power-bi/powerbi-essbaseconnector3.png)
 
-Expanding further, displays the list of members from {% label @Account Hierarchy %} in improper order. Microsoft might need to fix it to display in a proper order / hierarchy way.
+Expanding further, displays the list of members from `Account Hierarchy` in improper order. Microsoft might need to fix it to display in a proper order / hierarchy way.
 
 ### Designing Report / Dashboard
 Selecting the required Account codes and required dimensions from the list provide us the fields to design report in hierarchical order.

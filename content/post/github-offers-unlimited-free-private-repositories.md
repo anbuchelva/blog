@@ -63,9 +63,9 @@ Github pages won't work on private repos, either the repository to be public or 
 
 ![github_Private_repo_github_pages](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_github_pages.png)
 
-{% note warning %}
+{{< alert danger >}}
 If there is any static website hosted on github repo, the content and the images of the repo become private and won't be accessible.
-{% endnote %}
+{{< /alert >}}
 
 ### Make it Public Again
 

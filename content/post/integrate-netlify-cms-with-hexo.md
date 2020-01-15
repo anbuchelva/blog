@@ -112,7 +112,8 @@ Create a folder called`admin` under the source folder and add the following two 
 ### index.html
 This file is used for displaying the content management system. Copy the following code and put it in`index.html` file, without making any changes.
 
-{{< codeblock "index.html" "index.html" >}}<!doctype html>
+```
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -124,12 +125,13 @@ This file is used for displaying the content management system. Copy the followi
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
-{{< /codeblock >}}
+```
 
 ### config.yml  
 This file is used to configure the [Front-matter](https://hexo.io/docs/front-matter) of the blog posts.  There are few modifications needed on the code, based on your requirement.
 
-{{< codeblock "config.yml " "config.yml" >}}backend:
+```
+backend:
   name: git-gateway
   branch: source # Branch to update (optional; defaults to master)
 
@@ -153,7 +155,7 @@ collections:
       - {label: "Keywords", name: "keywords", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Display Comments", name: "comments", required: false, widget: "boolean", default: true}
-{{< /codeblock >}}
+```
 
 I have tried explaining each part of the above code, which may helpful.
 
@@ -179,7 +181,9 @@ You might have used`hexo g` or`hexo generate` command to build the site. Though,
 
 ### Fixing Bug in rendering CMS Admin
 I had an issue after making all the above configurations and I was unable to access the CMS page by visiting /admin page.  Found that, the`source/admin/config.yml` is renamed as`public/admin/config.json` with some modification after building the site. This can be fixed by adding admin folder contents in the`skip_render` option of hexo`config.yml` file.
-{{< codeblock "config.yml" "config.yml" >}} skip_render: admin/* {{< /codeblock >}}
+```
+skip_render: admin/*
+```
 
 ### Configure netlify.toml for Building Sites
 
@@ -189,11 +193,12 @@ This section is optional one.
 
 You can add build commands in the Site settings of Netlify page.  However, you may configure additional steps by creating`netlify.toml` file in the root of the site folder.
 
-{{< codeblock "netlify.toml" "netlify.toml" >}} [build]
+```
+[build]
   publish = "public/"
   command = "hexo clean && hexo g"
   environment = {NODE_ENV = "8.10.0"}
-{{< /codeblock >}}
+```
 
 This file would override the settings, that you mention in the netlify setting page.
 ## Use Cloudinary as Media Folder
