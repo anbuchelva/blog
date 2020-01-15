@@ -13,8 +13,8 @@ keywords:
   - Sharing
   - Windows
   - Linux
-thumbnailimage: "https://cdn.iconscout.com/icon/free/png-512/virtualbox-3-569544.png"
-url: "virtualbox/share-folders-between-windows-host-and-linux-guest-os/"
+thumbnailimage: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png"
+url: "/virtualbox/share-folders-between-windows-host-and-linux-guest-os/"
 ---
 My laptop was purchased in 2001 configured with i5 2nd Generation, 8+2 GB RAM.  I started having issues when the keyboard gives random inputs and the battery is dead.  It still works good on linux and Windows 7. I couldn't do anything on terminal when the keyboard gives random inputs.
 <!--more-->
@@ -33,20 +33,20 @@ I had setup the folders for sharing in the VirualBox and it appears in the file 
 The issue is the current user of Linux OS is not part of the virual box user group.  Fixing this solved the issue.
 
 #### Command Line Way
-Running this command in {% label @terminal window %} and {% label @logging off %} the current user has solved the issue.
+Running this command in `terminal window` and `logging off` the current user has solved the issue.
 
-{% codeblock %}
+```
 sudo usermod -aG vboxsf $(whoami)
-{% endcodeblock %}
+```
 
 #### GUI Way
-Search for {% label @User Settings %} and you will get the following window.  
+Search for `User Settings` and you will get the following window.  
 ![Linux Mint User Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-settings.png)
 
-Click on {% label, @Manage Groups %} button, identify {% label @vboxsf %} group.  
+Click on `Manage Groups` button, identify `vboxsf` group.  
 ![Linux Mint Group Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-group-settings.png)
 
-Then click {% label, @Properties %} and select the user name which you want to have access to the shared folder.  
+Then click `Properties` and select the user name which you want to have access to the shared folder.  
 ![Linux Mint User Group Properties](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-group-properties.png)
 
 Logging off the user (if already logged in) and log in back, would solve the issue.

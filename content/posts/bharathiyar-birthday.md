@@ -12,8 +12,10 @@ keywords:
   - tamil
   - kavithai
   - thedi soru thinam thindru
-aliases: [/general/bharathiyar-birthday/]
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg"
+url: "general/bharathiyar-birthday/"
 ---
+<!--more-->
 ![Bharathi](https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg)
 
 தேடிச் சோறுநிதந் தின்று - பல  

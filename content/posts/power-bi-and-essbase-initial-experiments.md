@@ -22,7 +22,7 @@ I have tried connecting to two different ASO cubes and share how Essbase reacts 
 
 
 
-Initially I have tried connecting the {% label @ASOsamp %} application after loading some random values as shown in the screenshot.
+Initially I have tried connecting the `ASOsamp` application after loading some random values as shown in the screenshot.
 
 ![Power_BI_Essbase_Connector_Initial_Experiments](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/asosamp-dataload.png)
 
@@ -34,7 +34,7 @@ It started freezing when I select all the dims and made the server to crash _(I 
 
 ![Power_BI_Essbase_Connector_Initial_Experiments](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/Power_BI_Essbase_Initial_Experiments_3.png)
 
-Logs for reference _(recreated for this post)_:  <https://hastebin.com/esazoyiwix.sql>.  I prefer not to run it in production and crash the servers.
+Logs for reference _(recreated for this post)_:  ~~<https://hastebin.com/esazoyiwix.sql>~~.  I prefer not to run it in production and crash the servers.
 
 Then I tried creating very small ASO application and loaded some random data.  This time it worked and I was able to get the values as expected.
 
@@ -54,8 +54,10 @@ Then I tried creating very small ASO application and loaded some random data.  T
 ![Power_BI_Essbase_Connector_Initial_Experiments](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/Power_BI_Essbase_Initial_Experiments_17.png)
 ![Power_BI_Essbase_Connector_Initial_Experiments](https://res.cloudinary.com/anbuchelva/image/upload/v1546629705/images/power-bi/Power_BI_Essbase_Initial_Experiments_18.png)
 
-If you notice the {% label @Period %} Dimension, the levels represented in Power BI is similar to the Generation that we call in Essbase.
+If you notice the `Period` Dimension, the levels represented in Power BI is similar to the Generation that we call in Essbase.
 
-Logs for reference : <https://hastebin.com/riqujohufi.sql>
+Logs for reference : ~~<https://hastebin.com/riqujohufi.sql>~~
 
-{% note info %} Update: Expecting a proper document from Microsoft on connecting essbase from Power BI. Refer the [Git issue here](https://github.com/MicrosoftDocs/powerbi-docs/issues/540). {% endnote %}
+{{< alert info >}}
+Update: Expecting a proper document from Microsoft on connecting essbase from Power BI. Refer the [Git issue here](https://github.com/MicrosoftDocs/powerbi-docs/issues/540).
+{{< /alert >}}

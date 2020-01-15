@@ -12,18 +12,21 @@ keywords:
   - non root
   - without xposed
 comments: true
+thumbnailimage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GfmWTlsAiMMxiLINBBnVXZSWUf5DhqkXTVUAYRJ5OA3XHGpBqg&s"
+url: "/android/bypass-screenshot-restriction-on-android/"
 ---
 Taking screenshots is a common activity, a normal user would do in all kind of electronic platforms.  I do not remember having restrictions in taking screenshots on Windows PC.  It used to be similar in [Android](/Android/) platform until Google introduce restrictions from taking a screenshot.
-
+<!--more-->
 Is there a way to bypass it? Yes!, there are...
 
 1. [Root](https://en.wikipedia.org/wiki/Rooting_(Android)) your device, install [Xposed framework](https://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053) - and lose warranty :stuck_out_tongue_winking_eye:
 2. Cast your device to another device, such as windows PC, then take a screenshot on the PC - how complex it is?
-3. Its my way, which is the easiest one.. 
-   Pressing and holding {% label @Volume Down %} and {% label @Power Key %} simultaneously would take screenshot in Android.  This won't work on the restricted apps and you would get an error notification that, 
-   {% note warning %}
-   Taking screenshots isn't allowed by the app or your organization.
-   {% endnote %}
+3. **Its my way, which is the easiest one..**  
+   Pressing and holding `Volume Down` and `Power Key` simultaneously would take screenshot in Android.  This won't work on the restricted apps and you would get an error notification that, 
+   
+{{< alert warning >}}
+Taking screenshots isn't allowed by the app or your organization.
+{{< /alert >}}
 
 I'm not going to suggest any magic to take a screenshots in such cases.  Just use the _Google Assistant_ to take a screenshot. Voila! It would byepass the security and grab the screen context to you.
 
@@ -40,7 +43,7 @@ Make sure you have the following on your Android device.
 
 * Just open the app that has restrictions in taking screenshot.
 * Say 'OK Google' or press & hold the Home button, which will trigger the Google Assistant.
-* Say {% label @Take Screenshot %}, which will take the screenshot of the app that has restrictions. You can share it via other applications or save in the storage.
+* Say `Take Screenshot`, which will take the screenshot of the app that has restrictions. You can share it via other applications or save in the storage.
 
 That's all!! This would **NOT** require rooting, installing any unknown applications on your phone. It would work untill Google fixes this _bug_!
 
@@ -48,10 +51,11 @@ That's all!! This would **NOT** require rooting, installing any unknown applicat
 
 I have made a video, to explain the same using **Telegram Secret Chat** feature.  You may apply the same in snapchat, UTS app, etc.,
 
-{% youtube LG9duUJ9SKg %}
+{{< youtube LG9duUJ9SKg >}}
 
-{% note default %}
+.    
+{{< alert info >}}
 
 **Update:** It looks like Google has fixed this bug and I'm unable to use this option to take screenshot when there is restriction, using Android Pie and latest Google App.  It just generates a black color image, which displays only the status bar and navigation bar.
 
-{% endnote %}
+{{< /alert >}}
