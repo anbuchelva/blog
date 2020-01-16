@@ -61,6 +61,12 @@ menu:
       title: About
       url: /about/
       weight: 5
+      
+    - identifier: disclaimer
+      name: Disclaimer
+      title: Disclaimer
+      url: /disclaimer/
+      weight: 5
 
 
 params:
@@ -98,6 +104,7 @@ params:
     books: icon-book-fill
     links: icon-friendship
     about: icon-cup-fill
+    disclaimer: icon-dialog
 
   # profile
   profile:
