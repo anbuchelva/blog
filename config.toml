@@ -31,7 +31,7 @@ copyright = "CC BY NC SA 4.0 || https://creativecommons.org/licenses/by-nc-sa/4.
       unsafe = true
 
 [permalinks]
-  post = "/:slug/"
+  post = "/:filename/"
 
 [taxonomies]
   tag = "tags"
