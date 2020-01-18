@@ -1,5 +1,7 @@
 .main-content-wrap {
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  max-width: 80%;
+  line-height: 0.9cm;
 }
 
 .caption {
