@@ -16,6 +16,7 @@ toc: true
 date: 2019-12-23T19:37:00.000+00:00
 updated: 2019-12-25T12:22:00.000+00:00
 url: "/blog/forestry-io-as-cms-for-hexo"
+thumbnailimage: "https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_120,w_120,f_auto,b_white,q_auto:eco/rkt2tgioo2njucinkhmd"
 
 ---
 There are many ways to write and publish blog posts, when it comes to git backed static websites.  I started with text editor for writing, terminal for building, then push it to [Github pages](https://pages.github.com/) for publishing.  Then I started using [Netlify](https://app.netlify.com) for building static pages, but was still using text editor and terminal locally.

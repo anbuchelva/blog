@@ -13,18 +13,19 @@ keywords:
   - Project Mainline
 comments: true
 url: "/android/project-mainline-is-google-trying-to-build-wall-of-garden"
+thumbnailimage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GfmWTlsAiMMxiLINBBnVXZSWUf5DhqkXTVUAYRJ5OA3XHGpBqg&s"
 ---
 Google introduced Project Mainline starting from Android 10.  Google claims that project mainline benefits users on 3 components.
 
 1. Security
 2. Privacy
 3. Consistency
-
+<!--more-->
 The simple way to explain Project Mainline is to push Android Security Updates through Google Play store, instead of android updates.
 
 More information on Project Mainline is available at [Android Developer's Blog](https://android-developers.googleblog.com/2019/05/fresher-os-with-projects-treble-and-mainline.html)
 
-<!--more-->
+
 
 Its good to get security updates directly from google rather than from the OEMs who don't provide updates frequently (there are few exceptions like Essential) and keep the users vulnerable on published exploits.
 
