@@ -184,7 +184,7 @@ copyright = "CC BY NC SA 4.0 || https://creativecommons.org/licenses/by-nc-sa/4.
   scrollPagination = true
 
   # Your favicon path, default is "/favicon.png"
-  favicon = "https://res.cloudinary.com/anbuchelva/image/upload/v1570369637/images/anbuchelva/anbuchelva.jpg"
+  favicon = "https://res.cloudinary.com/anbuchelva/image/upload/v1579198341/images/anbuchelva/favicon.ico"
 
   # Header configuration
   # The link at the right of the header is customizable
