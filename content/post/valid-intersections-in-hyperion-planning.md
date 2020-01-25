@@ -23,6 +23,7 @@ You ask me how to do it in Microsoft Excel using VBA or Microsoft Access using S
 ### The Problem
 There are two dimensions in a classic Planning Application having _many to many_ relationship. The user should select the correct combination in the web forms/SmartView and input the data. There should be restrictions setup for selecting/updating in incorrect combinations.	
 Lets assume the application is having following dimensions.
+
 1. Year
 2. Period
 3. Scenario

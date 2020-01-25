@@ -35,7 +35,7 @@ You cannot make a repo to private, if it is forked from a public repo and Github
 
 ![github_Private_repo_forked_repo_private](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_forked_repo_private.png)
 
-Once you click on the {% label @Make Private %} button, it would ask to enter the repo name for confirmation.
+Once you click on the `Make Private` button, it would ask to enter the repo name for confirmation.
 
 ![github_Private_repo_confirmation](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_confirmation.png)
 
@@ -69,7 +69,7 @@ If there is any static website hosted on github repo, the content and the images
 
 ### Make it Public Again
 
-The Process is same. Visit the {% label @Settings %} of the repo, then {% label @Danger Zone %} and make it public.  Enter the repo name on the confirmation page.
+The Process is same. Visit the `Settings` of the repo, then `Danger Zone` and make it public.  Enter the repo name on the confirmation page.
 
 ![github_Private_repo_make_public](https://res.cloudinary.com/anbuchelva/image/upload/v1546930143/images/github_private_repo/github_Private_repo_make_public.png)
 
