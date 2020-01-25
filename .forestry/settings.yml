@@ -16,13 +16,17 @@ sections:
   label: Pages
   create: all
   match: "*"
-upload_dir: uploads
+upload_dir: images
 public_path: https://res.cloudinary.com/anbuchelva/image/upload
-front_matter_path: https://res.cloudinary.com/anbuchelva/image/images
+front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
-  preview_docker_image: node:10
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.57.2
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
