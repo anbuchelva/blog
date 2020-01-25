@@ -16,9 +16,9 @@ sections:
   label: Pages
   create: all
   match: "*"
-upload_dir: uploads
+upload_dir: images
 public_path: https://res.cloudinary.com/anbuchelva/image/upload
-front_matter_path: https://res.cloudinary.com/anbuchelva/image/images
+front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 build:
