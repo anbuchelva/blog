@@ -12,7 +12,7 @@ keywords:
   - Essbase Connector
   - Power BI
   - Essbase
-thumbnailimage: "https://powerbi.microsoft.com/pictures/shared/social/social-default-image.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1579969704/images/power-bi/powerbi_logo.png"
 url: "Hyperion/power-bi-steps-to-connect-essbase-using-essbase-connector-beta/"
 ---
 There is a request from the Essbase & Power BI community to provide an official connector for connecting Essbase from Power BI.  It started exactly 4 years back and Microsoft was delaying it for long time.  Finally on Nov 7, 2018 the request has been taken care and moved from **under review** to **backlog** status.

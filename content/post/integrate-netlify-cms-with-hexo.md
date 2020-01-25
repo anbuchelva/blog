@@ -13,7 +13,7 @@ keywords:
   - netlify
   - netlify-cms
 comments: true
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_200/v1578787447/images/netlify-cms/logomark_1.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1578787447/images/netlify-cms/logomark_1.png"
 
 url: "/blog/integrate-netlify-cms-with-hexo/"
 ---

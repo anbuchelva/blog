@@ -13,7 +13,7 @@ keywords:
   - Sharing
   - Windows
   - Linux
-thumbnailimage: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1546937623/images/virualbox/Virtualbox_logo.png"
 url: "/virtualbox/share-folders-between-windows-host-and-linux-guest-os/"
 ---
 My laptop was purchased in 2001 configured with i5 2nd Generation, 8+2 GB RAM.  I started having issues when the keyboard gives random inputs and the battery is dead.  It still works good on linux and Windows 7. I couldn't do anything on terminal when the keyboard gives random inputs.

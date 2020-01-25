@@ -12,7 +12,7 @@ keywords:
   - tamil
   - kavithai
   - thedi soru thinam thindru
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1546629700/images/general/Bharathi.jpg"
 url: "general/bharathiyar-birthday/"
 ---
 <!--more-->

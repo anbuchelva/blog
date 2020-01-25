@@ -19,7 +19,7 @@ keywords:
   - Github Pages
   - Hexo Next Theme
 toc: true
-thumbnailimage: "https://avatars3.githubusercontent.com/u/29385237?s=280&v=4"
+#thumbnailimage: "https://avatars3.githubusercontent.com/u/29385237?s=280&v=4"
 url: "/blog/blogging-in-the-hard-way/"
 ---
 I have started this blog in last November, after that I did not write anything, as like the way it happens every time.  We start something and forget, until we make it as routine.  Meanwhile, I was doing some analysis and checks, etc on the blogging platform.  Like to share the same here..
@@ -33,6 +33,7 @@ Why Static Blog?  I have tried using the ready-made blogging platforms such as B
 I can write posts when I am off line, using a notepad++. Then just push to git repository when I connected to Internet.  Git provides the history / version control for all the modifications that I do.  If I feel a change that I made recently not working, I can just use `git revert` command to go back to the previous state.
 
 I have tried different static site generators the order listed below:
+
 * [Jekyll](https://jekyllrb.com/) - Lot of themes available, Github build the pages automatically.  But, felt it is slow. ~~Still my primary domain page https://anbuchelva.in is running on Jekyll.~~  **Edit:** Moved to static [page](https://anbuchelva.in) now.
 * [Hugo](https://gohugo.io/) - Simple. But Hexo won my heart.
 * [Ghost](https://ghost.org/) - Subscription based, not my cup of tea.

@@ -5,7 +5,7 @@ date= "2019-01-18T07:54:25.520Z"
 categories = ["work"]
 tags = ["Sutherland"]
 comments= true
-thumbnailimage = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMT_6zvo1g_m2FVBu8p-TE9BughPD8yQHQa4h4lxuDwPdUTNm"
+thumbnailimage = "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250/v1579969360/images/sutherland_logo.png"
 # thumbnailImagePosition = "right"
 TOC = true
 url = "/work/good-bye-sutherland"
