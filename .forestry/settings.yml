@@ -24,6 +24,6 @@ file_template: ":filename:"
 build:
   preview_output_directory: public
   install_dependencies_command: npm install
-  preview_docker_image: node:10
+  preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   instant_preview_command: hugo server -w
