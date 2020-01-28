@@ -13,7 +13,7 @@ keywords:
   - netlify
   - netlify-cms
 comments: true
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1578787447/images/netlify-cms/logomark_1.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250,f_auto,q_auto/v1578787447/images/netlify-cms/logomark_1.png"
 
 url: "/blog/integrate-netlify-cms-with-hexo/"
 ---
@@ -87,19 +87,19 @@ There are multiple ways to do it, I prefer the easiest way by updating it in the
 
 The outcome should look like this.
 
-![netlify_snippet_injection](https://res.cloudinary.com/anbuchelva/image/upload/v1547140285/images/netlify-cms/netlify_snippet_injection.png)
+![netlify_snippet_injection](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1547140285/images/netlify-cms/netlify_snippet_injection.png)
 
 ## Enable Netlify Identity
 Netlify Identity Services to be enabled for adding users and to enable authentication to them.  Go to`Settings` >`Identity` >`Enable Identity`
 
 You may add Github / GitLab / BitBucket / Google as external providers, if you or your users want to login any of these services for writing posts.
 
-![netlify_identity_external_providers](https://res.cloudinary.com/anbuchelva/image/upload/v1547140145/images/netlify-cms/netlify_identity_external_providers.png)
+![netlify_identity_external_providers](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1547140145/images/netlify-cms/netlify_identity_external_providers.png)
 
 ## Enable Git Gateway
 Git Gateway connects the site to the git provider's API. This should be enabled in the`Identity` >`Services` section.
 
-![netlify_git_gateway](https://res.cloudinary.com/anbuchelva/image/upload/v1547140429/images/netlify-cms/netlify_git_gateway.png)
+![netlify_git_gateway](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1547140429/images/netlify-cms/netlify_git_gateway.png)
 
 # Modify the Site Contents
 There would be small changes required in the site contents, which would help to setup the [Front-matter](https://hexo.io/docs/front-matter).
@@ -107,7 +107,7 @@ There would be small changes required in the site contents, which would help to 
 ## Configure CMS Admin Panel
 Create a folder called`admin` under the source folder and add the following two files in it.
 
-![netlify_admin_folder](https://res.cloudinary.com/anbuchelva/image/upload/v1547141203/images/netlify-cms/netlify_admin_folder.png)
+![netlify_admin_folder](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1547141203/images/netlify-cms/netlify_admin_folder.png)
 
 ### index.html
 This file is used for displaying the content management system. Copy the following code and put it in`index.html` file, without making any changes.
@@ -170,7 +170,7 @@ I have tried explaining each part of the above code, which may helpful.
 
 Netlify CMS is following different way in creating a draft post and preview it using`editorial_workflow` than Hexo is designed for drafting a post.  It creates a pull request from the existing repo for each blog post. It builds the site immediately and available for preview in a unique URL. Once the post is made`Ready` and`Published`, Netlify-CMS closes the pull request by merging the changes to the branch where the source is saved and deleting the branch made by pull request.
 
-![netlify_cms_editorial_workflow](https://res.cloudinary.com/anbuchelva/image/upload/v1547142063/images/netlify-cms/netlify_cms_editorial_workflow.png)
+![netlify_cms_editorial_workflow](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1547142063/images/netlify-cms/netlify_cms_editorial_workflow.png)
 
 {{< alert warning >}}
 Editorial Workflow i.e., creating a pull request / merging it back is applicable only for Github.  GitLab and BitBucket works differently.

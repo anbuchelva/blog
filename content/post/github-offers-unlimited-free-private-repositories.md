@@ -13,7 +13,7 @@ keywords:
   - gitlab
   - private repositories
 comments: true
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250/v1578787699/images/github_private_repo/36686_1.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1578787699/images/github_private_repo/36686_1.png"
 url: "/git/github-offers-unlimited-free-private-repositories/"
 ---
 Starting today [GitHub](https://github.com/) offers unlimited free private repositories, which is a long expected one as the competitors  like [GitLab](https://githlab.com) and [BitBucket](https://bitbucket.org) are already doing it.
@@ -29,15 +29,15 @@ Creating new repository has an option to choose between Private and Public, whic
 
 To make an existing repo private, go to `Settings` of the repository and scroll to the bottom where the `Danger Zone` exists and select the option to make the repository private.
 
-![github_Private_repo_danger_zone](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_danger_zone.png)
+![github_Private_repo_danger_zone](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930142/images/github_private_repo/github_Private_repo_danger_zone.png)
 
 You cannot make a repo to private, if it is forked from a public repo and Github asks to make a fresh repo for such cases.
 
-![github_Private_repo_forked_repo_private](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_forked_repo_private.png)
+![github_Private_repo_forked_repo_private](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930142/images/github_private_repo/github_Private_repo_forked_repo_private.png)
 
 Once you click on the `Make Private` button, it would ask to enter the repo name for confirmation.
 
-![github_Private_repo_confirmation](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_confirmation.png)
+![github_Private_repo_confirmation](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930142/images/github_private_repo/github_Private_repo_confirmation.png)
 
 Done! These steps makes the existing repo private.
 
@@ -49,19 +49,19 @@ There are few things to notice, when the repos are made private.
 
 First thing to notice when the repo is private github stop accessing it unless you give persission. So there won't be any audit done on the codes; vulnerability alers are disabled. Providing read-only access would solve the issue.
 
-![github_Private_repo_data_services](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_data_services.png)
+![github_Private_repo_data_services](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930142/images/github_private_repo/github_Private_repo_data_services.png)
 
 #### Github Wikis
 
 Github Wikis will not be enabled for private repos, unless pro version is puchased.  It is expected when the repo is private it is hidden from everyone, including wiki.
 
-![github_Private_repo_features](https://res.cloudinary.com/anbuchelva/image/upload/v1546930143/images/github_private_repo/github_Private_repo_features.png)
+![github_Private_repo_features](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930143/images/github_private_repo/github_Private_repo_features.png)
 
 #### GitHub Pages
 
 Github pages won't work on private repos, either the repository to be public or the pro version should be purchased.
 
-![github_Private_repo_github_pages](https://res.cloudinary.com/anbuchelva/image/upload/v1546930142/images/github_private_repo/github_Private_repo_github_pages.png)
+![github_Private_repo_github_pages](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930142/images/github_private_repo/github_Private_repo_github_pages.png)
 
 {{< alert danger >}}
 If there is any static website hosted on github repo, the content and the images of the repo become private and won't be accessible.
@@ -71,7 +71,7 @@ If there is any static website hosted on github repo, the content and the images
 
 The Process is same. Visit the `Settings` of the repo, then `Danger Zone` and make it public.  Enter the repo name on the confirmation page.
 
-![github_Private_repo_make_public](https://res.cloudinary.com/anbuchelva/image/upload/v1546930143/images/github_private_repo/github_Private_repo_make_public.png)
+![github_Private_repo_make_public](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546930143/images/github_private_repo/github_Private_repo_make_public.png)
 
 ### The Pros and Cons
 

@@ -12,11 +12,11 @@ keywords:
   - tamil
   - kavithai
   - thedi soru thinam thindru
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1546629700/images/general/Bharathi.jpg"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250,f_auto/v1546629700/images/general/Bharathi.jpg"
 url: "general/bharathiyar-birthday/"
 ---
 <!--more-->
-![Bharathi](https://res.cloudinary.com/anbuchelva/image/upload/v1546629700/images/general/Bharathi.jpg)
+![Bharathi](https://res.cloudinary.com/anbuchelva/image/upload/f_auto/v1546629700/images/general/Bharathi.jpg)
 
 தேடிச் சோறுநிதந் தின்று - பல  
 சின்னஞ் சிறுகதைகள் பேசி - மனம்  

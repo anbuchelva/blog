@@ -15,7 +15,7 @@ keywords:
   - Forms
   - Validation Rules
 toc: true
-url: "/Hyperion/valid-intersections-in-hyperion-planning/"
+url: "/hyperion/valid-intersections-in-hyperion-planning/"
 ---
 I recently encountered with a requirement that the users should input data in the Planning Forms only for Valid Intersection. There's an option to setup Valid Intersection in PBCS. But, the requirement is to setup the same on premises environment.
 You ask me how to do it in Microsoft Excel using VBA or Microsoft Access using SQL Query, I would do it very easily. But in Hyperion Planning, there's no such option available inbuilt.
@@ -66,13 +66,13 @@ The `dyn_Valid Intersection` member would give an output as 0 or 1 (yes or no) f
 Open the form in `Edit` mode and go to `Layout` tab.
 1. Add the `dyn_Valid Intersection` member in the first row of every form, where you want to set up this validation. _I'm trying to find a way to achieve the output without adding a row_
 2. Select `Validation Rules` from right pane, click the `+` sign and setup a validation rule as like the screen shot  
-![Hyperion Planning Form Validation Rule Setup](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule1.PNG)  
+![Hyperion Planning Form Validation Rule Setup](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule1.PNG)  
 2. I keep the process format in grey, as it would mimic the user that the cell is for editing, though it is editable. You may add a `Validation Message` which will be displayed to the users upon error.  
-![Hyperion Planning Form Validation Error Message](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule2.PNG)  
+![Hyperion Planning Form Validation Error Message](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule2.PNG)  
 3. Once done, click `Validate` to validate the `Validation Rule` :wink:  
-![Hyperion Planning Form Validate validation rule](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule3.PNG)  
+![Hyperion Planning Form Validate validation rule](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule3.PNG)  
 4. Now open the form to input data and select incorrect combination from the `Page` section / `drop down`. You will see all the cells are grayed out. When you try to input data in a `store` member, you will get the error message that was setup in the `Validation Rule`.  
-![Hyperion Planning Validation Rule Invalid Intersections](https://res.cloudinary.com/anbuchelva/image/upload/v1546629694/images/HP/Validation_Rule4.PNG)  
+![Hyperion Planning Validation Rule Invalid Intersections](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule4.PNG)  
 5. It doesn't restrict user to input on the invalid intersections. However, it just give a warning to them that they have selected invalid intersections and inputting data.
 
 #### Step 4: Setup a Business rule to validate the intersections while saving form.

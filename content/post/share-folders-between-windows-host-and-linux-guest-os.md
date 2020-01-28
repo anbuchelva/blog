@@ -13,7 +13,7 @@ keywords:
   - Sharing
   - Windows
   - Linux
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250/v1546937623/images/virualbox/Virtualbox_logo.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,h_250,f_auto,q_auto/v1546937623/images/virualbox/Virtualbox_logo.png"
 url: "/virtualbox/share-folders-between-windows-host-and-linux-guest-os/"
 ---
 My laptop was purchased in 2001 configured with i5 2nd Generation, 8+2 GB RAM.  I started having issues when the keyboard gives random inputs and the battery is dead.  It still works good on linux and Windows 7. I couldn't do anything on terminal when the keyboard gives random inputs.
@@ -41,12 +41,12 @@ sudo usermod -aG vboxsf $(whoami)
 
 #### GUI Way
 Search for `User Settings` and you will get the following window.  
-![Linux Mint User Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-settings.png)
+![Linux Mint User Settings](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629701/images/virualbox/linux-mint-user-settings.png)
 
 Click on `Manage Groups` button, identify `vboxsf` group.  
-![Linux Mint Group Settings](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-group-settings.png)
+![Linux Mint Group Settings](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629701/images/virualbox/linux-mint-group-settings.png)
 
 Then click `Properties` and select the user name which you want to have access to the shared folder.  
-![Linux Mint User Group Properties](https://res.cloudinary.com/anbuchelva/image/upload/v1546629701/images/virualbox/linux-mint-user-group-properties.png)
+![Linux Mint User Group Properties](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629701/images/virualbox/linux-mint-user-group-properties.png)
 
 Logging off the user (if already logged in) and log in back, would solve the issue.

@@ -37,21 +37,21 @@ There is a post that explains how to [Integrate Netlify CMS with Hexo]({{< relre
 
 Login to forestry.io, then click add site button.  There is no dedicated option available to connect to Hexo, use the other option.
 
-![forestry select platform](https://res.cloudinary.com/anbuchelva/image/upload/v1577124196/images/Screenshot_89_ybvaxy.png)
+![forestry select platform](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577124196/images/Screenshot_89_ybvaxy.png)
 
 Then select your git based repository provider, where your blog sources are located, keep the Quick Setup via OAuth checked.
 
-![forestry select git provider](https://res.cloudinary.com/anbuchelva/image/upload/v1577124603/images/Screenshot_90_gixnmd.png)
+![forestry select git provider](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577124603/images/Screenshot_90_gixnmd.png)
 
 Select your repository and the right branch.
 
-![forestry select right branch](https://res.cloudinary.com/anbuchelva/image/upload/v1577124801/images/Screenshot_91_ogb0bu.png)
+![forestry select right branch](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577124801/images/Screenshot_91_ogb0bu.png)
 
 ### Configure Sidebar
 
 Once imported, you will get a wizard to configure sidebar; by doing it forestry creates a folder in the git repo named `.forestry`, where all the configuration files are stored.
 
-![forestry configure sidebar](https://res.cloudinary.com/anbuchelva/image/upload/v1577125841/images/Screenshot_93_sj7txo.png)
+![forestry configure sidebar](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577125841/images/Screenshot_93_sj7txo.png)
 
 You can refer this blog's config [here](https://github.com/anbuchelva/blog/tree/source/.forestry).  You can configure the sidebar manually or you can just take those files from my repo and place it in yours.
 
@@ -64,7 +64,7 @@ You can connect to any of the following sources to source your images.
 3. Amazon S3
 4. Netlify Large Media
 
-![forestry handle media](https://res.cloudinary.com/anbuchelva/image/upload/v1577126114/images/Screenshot_95_ndprsb.png)
+![forestry handle media](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577126114/images/Screenshot_95_ndprsb.png)
 
 There are two paths/folders to be mentioned, where the file to be uploaded and the public path where the media files would be sourced. This blog is configured with [cloudinary](https://cloudinary.com/) free version.
 
@@ -72,7 +72,7 @@ There are two paths/folders to be mentioned, where the file to be uploaded and t
 
 This is the place where the front matter are configured.  It can be imported from the existing blog posts or can be configured manually.  This creates a folder in the following path of the git repo `.forestry/front_matter/templates`.
 
-![forestry front matter example](https://res.cloudinary.com/anbuchelva/image/upload/v1577126583/images/Screenshot_98_evjy1i.png)
+![forestry front matter example](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1577126583/images/Screenshot_98_evjy1i.png)
 
 ### Preview Builds
 

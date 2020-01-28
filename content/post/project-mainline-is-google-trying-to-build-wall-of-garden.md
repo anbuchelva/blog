@@ -13,7 +13,7 @@ keywords:
   - Project Mainline
 comments: true
 url: "/android/project-mainline-is-google-trying-to-build-wall-of-garden"
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250/v1579455286/images/android.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1579455286/images/android.png"
 ---
 Google introduced Project Mainline starting from Android 10.  Google claims that project mainline benefits users on 3 components.
 

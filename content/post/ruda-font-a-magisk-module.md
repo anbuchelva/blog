@@ -14,7 +14,7 @@ keywords:
   - Magisk Module
   - Google Font
   - Ruda
-thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250/v1579374483/images/magisk_logo.png"
+thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1579374483/images/magisk_logo.png"
 url: "/android/ruda-font-a-magisk-module/"
 ---
 I started rooting Android Phone since 2013, starting from my first Android Mobile - [Samsung Galaxy Ace 2](https://www.gsmarena.com/samsung_galaxy_ace_2_i8160-4559.php). I was a user of Super-SU made by [chainfire](https://chainfire.eu/); then I switched to [Magisk](https://github.com/topjohnwu/Magisk) to root my phones systemless-ly.
