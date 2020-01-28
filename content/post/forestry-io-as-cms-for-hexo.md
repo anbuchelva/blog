@@ -1,6 +1,6 @@
 ---
 title: Forestry.io as CMS for Hexo
-category:
+categories:
 - blog
 tags:
 - blog

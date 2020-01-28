@@ -2,7 +2,7 @@
 title: Project Mainline - Is Google trying to build Wall of Garden?
 date: 2019-10-13T05:55:04.086Z
 updated: 2019-10-13T06:42:19.491Z
-category:
+categories:
   - android
 tags:
   - Android 10
