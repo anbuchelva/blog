@@ -2,6 +2,12 @@
 label: Post
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: Title
+  description: Title of the post
+  config:
+    required: true
 - type: select
   name: author
   config:
@@ -12,6 +18,10 @@ fields:
     - Anbuselvan Palaniyandi
   label: Author
   hidden: false
+- name: draft
+  type: boolean
+  label: Draft
+  default: true
 - type: datetime
   name: date
   label: Date
@@ -20,12 +30,7 @@ fields:
     date_format: YYYY/MM/DD
     required: true
     time_format: hh:mm A ZZ
-- type: text
-  name: title
-  label: Title
-  description: Title of the post
-  config:
-    required: true
+  default: now
 - type: tag_list
   description: One or More Categories. The first category would be the parent and
     the 2nd category would be child
@@ -71,25 +76,29 @@ fields:
   name: gallery
   label: Gallery
   description: Select Multiple Images if you want to display it as gallery
-- type: boolean
-  name: showPagination
-  label: Show Pagination
-  description: Do you want to display the Previous Post and Next Post at the bottom?
-- type: boolean
-  name: showSocial
-  label: Show Social
-  description: Do you want to display the sharing options at the bottom?
-- type: boolean
-  name: showActions
-  label: Show Actions
-  description: 'true: Show post actions (navigation, share links).'
 - type: text
   name: summary
   label: summary
   description: Custom text to show on the homepage, but not displayed in the post.
 - type: boolean
+  name: showPagination
+  label: Show Pagination
+  description: Do you want to display the Previous Post and Next Post at the bottom?
+  default: true
+- type: boolean
+  name: showSocial
+  label: Show Social
+  description: Do you want to display the sharing options at the bottom?
+  default: true
+- type: boolean
+  name: showActions
+  label: Show Actions
+  description: 'true: Show post actions (navigation, share links).'
+  default: true
+- type: boolean
   name: comments
   label: Comments
   description: Do you want to allow the visitiors to comment this post?
+  default: true
 pages:
 - content/post/zoho-oneauth-security-redefined.md
