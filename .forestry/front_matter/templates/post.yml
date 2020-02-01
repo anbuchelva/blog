@@ -91,3 +91,5 @@ fields:
   name: comments
   label: Comments
   description: Do you want to allow the visitiors to comment this post?
+pages:
+- content/post/zoho-oneauth-security-redefined.md
