@@ -1,16 +1,14 @@
 +++
-title= "Good Bye Sutherland!"
-date= "2019-01-18T07:54:25.520Z"
-# updated: 2019-01-18T07:54:25.590Z
-categories = ["work"]
-tags = ["Sutherland"]
-comments= true
-thumbnailimage = "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1579969360/images/sutherland_logo.png"
-# thumbnailImagePosition = "right"
 TOC = true
+categories = ["work"]
+comments = true
+date = 2019-01-18T07:54:25Z
+tags = ["Sutherland"]
+thumbnailimage = "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1579969360/images/sutherland_logo.png"
+title = "Good Bye Sutherland!"
 url = "/work/good-bye-sutherland"
-+++
 
++++
 I'm completing 8+ years of journey with [Sutherland](https://www.linkedin.com/company/sutherland-global-services) today, which is the longest stint of my career in any organization that I worked. It looks like I have spent a long period here, but feels like short. <!--more--> I would say that,
 
 
@@ -43,7 +41,7 @@ I am thankful to everyone in this organization for providing me opportunity and 
 # Contact Details
 I would be happy if we keep in touch; you may contact me by  
 
-* The traditional way by sending an email to [sutherland@anbuchelva.in](mailto:sutherland@anbuchelva.in)
+* The traditional way by sending an email to [email@anbuchelva.in](mailto:email@anbuchelva.in)
 * You wish to follow my career updates send a connection request at [LinkedIn](https://www.linkedin.com/in/anbuchelva)  
 * Looking for immediate response send a [Telegram](https://t.me/anbuchelva)  
 * Looking for sending a confidential message? use [Keybase](https://keybase.io/anbuchelva) to get my public keys.  
@@ -53,5 +51,4 @@ Anbuselvan 🖖
 
 {{< alert info >}} 
 Sutherland has restrictions in loading the comment module. Please access this page in your personal network rather than Sutherland's network, if you wish to make comments. 
-{{< /alert >}} 
-
+{{< /alert >}}
