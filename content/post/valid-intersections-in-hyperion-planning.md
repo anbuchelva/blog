@@ -67,7 +67,7 @@ Open the form in `Edit` mode and go to `Layout` tab.
 1. Add the `dyn_Valid Intersection` member in the first row of every form, where you want to set up this validation. _I'm trying to find a way to achieve the output without adding a row_
 2. Select `Validation Rules` from right pane, click the `+` sign and setup a validation rule as like the screen shot  
 ![Hyperion Planning Form Validation Rule Setup](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule1.PNG)  
-2. I keep the process format in grey, as it would mimic the user that the cell is for editing, though it is editable. You may add a `Validation Message` which will be displayed to the users upon error.  
+2. I keep the process format in grey, as it would mimic the user that the cell is locked for editing, though it is editable. You may add a `Validation Message` which will be displayed to the users upon error.  
 ![Hyperion Planning Form Validation Error Message](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule2.PNG)  
 3. Once done, click `Validate` to validate the `Validation Rule` :wink:  
 ![Hyperion Planning Form Validate validation rule](https://res.cloudinary.com/anbuchelva/image/upload/f_auto,q_auto/v1546629694/images/HP/Validation_Rule3.PNG)  
