@@ -91,7 +91,7 @@ enableEmoji = true
   identifier = "email"
   name = "Contact"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-envelope\"></i>"
-  url = "mailto:email@anbuchelva.in"
+  url = "mailto:anbu@essbase.dev"
 [[menu.links]]
   weight = 2
   identifier = "linkedin"
