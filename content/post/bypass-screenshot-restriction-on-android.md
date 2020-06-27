@@ -15,7 +15,7 @@ comments: true
 thumbnailimage: "https://res.cloudinary.com/anbuchelva/image/upload/c_scale,w_250,f_auto,q_auto/v1579455286/images/android.png"
 url: "/android/bypass-screenshot-restriction-on-android/"
 ---
-Taking screenshots is a common activity, a normal user would do in all kind of electronic platforms.  I do not remember having restrictions in taking screenshots on Windows PC.  It used to be similar in [Android](/Android/) platform until Google introduce restrictions from taking a screenshot.
+Taking screenshots is a common activity, a normal user would do in all kind of electronic platforms.  I do not remember having restrictions in taking screenshots on Windows PC.  It used to be similar in [Android](/categories/android/) platform until Google introduce restrictions from taking a screenshot.
 <!--more-->
 Is there a way to bypass it? Yes!, there are...
 

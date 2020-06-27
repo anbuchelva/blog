@@ -1,8 +1,0 @@
-[build]
-  # command = ". deploy.sh"
-  command = "hugo --gc --minify"
-
-[context.production.environment]
-  HUGO_VERSION = "0.57.2"
-  HUGO_ENV = "development"
-  HUGO_ENABLEGITINFO = "true"
