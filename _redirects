@@ -1,0 +1,6 @@
+# Redirect default Netlify subdomain to primary domain
+https://anbu-blog.netlify.com/* https://blog.anbuchelva.in/:splat 301!
+https://blog.anbuchelva.in/Android/* https://blog.anbuchelva.in/android/:splat 301!
+https://blog.anbuchelva.in/Hyperion/* https://blog.anbuchelva.in/hyperion/:splat 301!
+https://blog.anbuchelva.in/General/* https://blog.anbuchelva.in/general/:splat 301!
+https://blog.anbuchelva.in/Blog/* https://blog.anbuchelva.in/blog/:splat 301!
