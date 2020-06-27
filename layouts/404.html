@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
   <body>
-    <div id="blog">
+    <div id="blog"></br></br>  
+    <h2><center> "The page you're looking for doesn't exist. You may get the same from here.." </center></h2>    
       {{ partial "header.html" . }}
       {{ partial "sidebar.html" . }}
       <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
@@ -8,9 +9,9 @@
                {{ if eq .Params.coverMeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         <div id="archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
+          <!--form id="filter-form" action="#">
             <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
-          </form>
+          </form-->
           {{ partial "archive-post.html" (where .Site.RegularPages "Type" "post") }}
         </div>
       </div>
