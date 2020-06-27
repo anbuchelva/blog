@@ -33,4 +33,4 @@ IN NO EVENT SHALL THE AUTHOR BE LIABLE UNDER THIS AGREEMENT FOR ANY DAMAGES OR L
 Please remember that the Author means to DO NO HARM to You or anyone else by writing this Blog. If You feel that your rights have been infringed, please contact the Author, and allow seven business days for the reply to be received. The Author will do whatever possible to address Your concerns.
 
 Updated on 09-May-2018 at 12.00 AM IST
-_Adapted from: [CPM Insights](http://www.cpminsights.com/disclaimer/)_
+_Adapted from: [CPM Insights](https://www.cpminsights.com/disclaimer/)_

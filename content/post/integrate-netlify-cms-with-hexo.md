@@ -37,7 +37,7 @@ I would wanted to write my experience in setting up Netlify-CMS for this blog.
 
 {{< alert info >}}
 This post is mainly for the people who already uses [Hexo](https://hexo.io/) platform for generating static websites.
-I use [Hexo-Theme-Next](http://theme-next.org/), which is the most used theme in Hexo platform, the post is 100% compatible for this theme, may be used as base for  other Hexo themes as well.
+I use [Hexo-Theme-Next](https://theme-next.org/), which is the most used theme in Hexo platform, the post is 100% compatible for this theme, may be used as base for  other Hexo themes as well.
 {{< /alert >}}
 
 <!-- toc -->
@@ -206,7 +206,7 @@ This file would override the settings, that you mention in the netlify setting p
 This section is optional one.
 {{< /alert >}}
 
-Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others. So, I would suggest using http://cloudinary.com for hosting the site images.
+Hosting images in the git repo is a bad idea, as the repo size would gradually increase when new posts are added with new images.  Also GitHub started [providing free private repositories](/git/github-offers-unlimited-free-private-repositories/), you might want the source of your site contents to be hidden from others. So, I would suggest using https://cloudinary.com for hosting the site images.
 
 You need to create a free account from cloudinary and get the required details from the dashboard page.  Then configure the`source/admin/config.yml` file as like below; refer lines between 7 and 13.
 
