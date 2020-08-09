@@ -79,12 +79,12 @@ enableEmoji = true
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
-# [[menu.main]]
-  # weight = 5
-  # identifier = "about"
-  # name = "About"
-  # pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  # url = "/about"
+[[menu.main]]
+  weight = 5
+  identifier = "projects"
+  name = "Projects"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-check\"></i>"
+  url = "/projects"
 
 [[menu.links]]
   weight = 1
