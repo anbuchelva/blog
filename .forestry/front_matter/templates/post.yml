@@ -101,4 +101,5 @@ fields:
   description: Do you want to allow the visitiors to comment this post?
   default: true
 pages:
+- content/post/experiment-with-oracle-cloud.md
 - content/post/zoho-oneauth-security-redefined.md
