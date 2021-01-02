@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2020-10-01T20:18:20+05:30
 showPagination: true
 showSocial: true
