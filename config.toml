@@ -24,6 +24,7 @@ canonifyurls = true
 removePathAccents = true
 copyright = "CC BY NC SA 4.0 || https://creativecommons.org/licenses/by-nc-sa/4.0/"
 enableEmoji = true
+publishDir = "public"
 
 # https://gohugo.io/getting-started/configuration-markup#goldmark
 [markup]
