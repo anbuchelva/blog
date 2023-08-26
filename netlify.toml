@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  command = "hugo --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.71.1"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "hugo"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "preview"
