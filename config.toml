@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.4.7-BETA
+# Version : 0.5.3-BETA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -17,20 +17,14 @@ languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "anbuchelva's blog"
 theme = "hugo-tranquilpeak-theme"
-disqusShortname = "anbu-blog"
-googleAnalytics = "UA-120979997-1"
+#disqusShortname = "anbu-blog"
+#googleAnalytics = "UA-120979997-1"
 paginate = 6
 canonifyurls = true
 removePathAccents = true
 copyright = "CC BY NC SA 4.0 || https://creativecommons.org/licenses/by-nc-sa/4.0/"
 enableEmoji = true
 publishDir = "public"
-
-# https://gohugo.io/getting-started/configuration-markup#goldmark
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
 
 [permalinks]
   post = "/:filename/"
@@ -40,10 +34,20 @@ publishDir = "public"
   category = "categories"
   archive = "archives"
 
+# ------
+# Markup
+# ------
+[markup]
+  # Set startLevel = 1 to support # title (<h1>title</h1>) otherwise table of content is blank/empty
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+
 [author]
   name = "Anbuselvan Palaniyandi"
   bio = "an EPM Consultant and an Android Enthusiast"
-  job = "Manager @ Standard Chartered Bank"
+  job = "Principal Consultant @ Oracle"
   location = "Chennai, India"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   # gravatarEmail = "thibaud.lepretre@gmail.com"
@@ -97,13 +101,14 @@ publishDir = "public"
   weight = 2
   identifier = "linkedin"
   name = "LinkedIN"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-linkedin\"></i>"
   url = "https://in.linkedin.com/in/anbuchelva"
 [[menu.links]]
   weight = 3
   identifier = "twitter"
   name = "Twitter"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  #pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-twitter\"></i>"
   url = "https://twitter.com/anbuchelva"
 # [[menu.links]]
   # weight = 4
@@ -116,7 +121,8 @@ publishDir = "public"
   weight = 0
   identifier = "rss"
   name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  #pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 
 [params]
@@ -210,6 +216,75 @@ publishDir = "public"
   # they have to be referred from static root. Example
   # [[params.customJS]]
   #   src = "js/myscript.js"
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"
+    integrity = "sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"
+    integrity = "sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"
+    integrity = "sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"
+    integrity = "sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"
+    integrity = "sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"
+    integrity = "sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"
+    integrity = "sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"
+    integrity = "sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"
+    integrity = "sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"
+    integrity = "sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
@@ -217,12 +292,12 @@ publishDir = "public"
   # Tranquilpeak configuration > Theme configuration > sharing-options
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fa-facebook-official"
+    icon = "fab fa-facebook"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
     name = "Twitter"
-    icon = "fa-twitter"
+    icon = "fab fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
 
   # [[params.sharingOptions]]
@@ -242,3 +317,11 @@ publishDir = "public"
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   [params.footer]
     copyright = "<a href=\"https://github.com/anbuchelva\">anbuchelva</a>"
+
+  # --------------
+  # Comment system
+  # --------------
+  [params.comment]
+    [params.comment.disqus]
+      enable = true
+      shortname = "anbu-blog"
