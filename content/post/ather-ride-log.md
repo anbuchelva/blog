@@ -1,7 +1,7 @@
 ---
 title: "Collect Ather Logs in Google Sheets via Telegram Bot"
 date: 2023-08-26
-updated: 2023-08-26
+updated: 2023-08-27
 categories:
   - projects
 tags:
@@ -22,109 +22,102 @@ TOC: true
 
 url: "/blog/collect-ather-logs-to-google-sheets/"
 ---
-I have been using the Ather 450X for last 8+ months. I like to drive the vehicle compared to the previous vehicles that have I owned.
 
-Ather provides some statistics in the app such as last 20 rides, monthly ride logs, charging statistics, etc., But recently they stopped sending the monthly logs, so I want to collect the logs by myself for analysis purpose.
+I have been using the Ather 450X for over 8 months now. I prefer driving this vehicle more compared to my previous ones.
+
+The Ather app provides statistics such as the last 20 rides, monthly ride logs, charging statistics, etc. However, they recently stopped sending monthly logs. To continue analyzing the data, I decided to collect the logs myself.
+
 <!--more-->
-<!-- toc -->
-## The Purpose
-I wanted to see the trend how many Km I'm driving every month, what is the expected range and whether it is increasing month over month or decreasing, etc., The monthly ride logs were useful, but there's no place where I can check all the months data in one place after Ather discontinue the logs. I need to find my previous emails to check them.
+<!--TOC-->
 
-So I wanted to collect the logs by myself and include few metrics that Ather doesn't provide directly such as Batter Usave for each ride, Batter Usage per day, per month, battrey consumtpion per Km. Also I will own my data and I can check whenever I like.
+## Purpose
+My aim was to track trends in my monthly driving distance, monitor expected range variations, and evaluate whether these metrics are increasing or decreasing over time. The monthly ride logs were helpful, but since Ather discontinued them, there's no single place to view all the monthly data. I used to rely on my previous emails to access them.
+
+I wanted to take charge of collecting the logs, incorporate additional metrics not provided by Ather, such as Battery Usage for each ride, Daily and Monthly Battery Usage, and Battery Consumption per Kilometer. By managing my data, I can access it at my convenience.
 
 ## Thought Process
-Initially I was thinking to collect the statistics manually using a webpage. But I felt the interest in updating the logs will be lost, if it is cumbursome.  So I wanted to take the option provided by Ather in the app for sharing the ride statistics as image for their marketing purposes(?).
+Initially, I considered manually collecting statistics using a webpage. However, I realized this could become cumbersome and might discourage me from maintaining the logs over time. I opted for the option in the Ather app to share ride statistics as images for their marketing purposes.
 
-Then run OCR on the image get the relevant text values and organize it in a proper manner.  So I will not lose interest in updating the logs over a period of time.
+I planned to run Optical Character Recognition (OCR) on these images to extract relevant text values and then organize them systematically. This way, I wouldn't lose interest in maintaining the logs, as it require less work.
 
 ## Tools
-I wanted tools to process the following steps.
-1. Collect input from Ather app.
+I needed tools for the following steps:
+1. Collect input from the Ather app.
 2. Process OCR and convert to data points.
-3. Store the organized data in some place.
-4. Setup some reports to analyze the trend and usage
-5. A platform to automate all the above.
-6. All I wanted to be free or cost effective
+3. Store organized data.
+4. Set up reports for trend analysis.
+5. Automate the process.
+6. Keep costs low or free.
 
-After thinking for sometime I settled with the following in the same order.
-1. Collect input from Ather app - Telegram / Telegram bot
-2. Process OCR and convert to data points - Google Docs
-3. Store the organized data in some place - Google Sheets
-4. Setup some reports to analyze the trend and usage - Google Sheets
-5. A platform to automate all the above - Google Scripts
-6. All I wanted to be free or cost effective - All the above are free with a certain limit
+After consideration, I settled on the following tools:
+1. Collect input from Ather app: Telegram / Telegram bot.
+2. Process OCR and convert to data points: Google Docs.
+3. Store organized data: Google Sheets.
+4. Set up trend analysis reports: Google Sheets.
+5. Automate the process: Google Scripts.
+6. Keep costs low or free: All tools above are free within certain limits.
 
-## How does it work?
-- Go to Ather app and open ride statistics - The app contains 20 latest ride with information like Date and time, Distance Travelled, Time spent, Efficiency, Projected Range, Top Speed.
-- Share the image to Telegram - the bot that I have created for my personal use.
-- The bot sends the image to Google Drive
-- A script picks the image and convert to text and data points
-- A script cleanup the data and put it in a right column
-- Google sheets summarizes the data and for update charts
-- Telegram bot send a summary of what was extracted from the image.
-- Telegram bot gives additional options to get the ride statistics as graphs.
+## How It Works
+1. Open the Ather app and access ride statistics, which includes details like Date, Distance Traveled, Time Spent, Efficiency, Projected Range, and Top Speed for the last 20 rides.
+2. Share the ride statistics image with my Telegram bot.
+3. The bot sends the image to Google Drive.
+4. A script retrieves the image, converts it to text and data points.
+5. The script organizes the data and places it in the correct columns.
+6. Google Sheets summarizes the data and generates update charts.
+7. The Telegram bot sends a summary of the extracted image information.
+8. The Telegram bot provides options to view ride statistics as graphs.
 
 ## Setup
 ### Requirements
-If you wish to setup the same for your personal use, you need the following.
-* A google account with few MBs free space
-* A Telegram account
-* A PC to setup the process. It is very difficult to set up using mobile.
-* Little time and patience
+To set up a similar system for personal use, you'll need:
+- A Google account.
+- A Telegram account.
+- A computer (setting up on a mobile device is challenging).
+- Some time and patience.
 
-I'm not going to explain how to setup google and telegram accounts here.
+### Setting up Telegram Bot
+1. Search for BotFather on Telegram or use this link: [https://t.me/BotFather](https://t.me/BotFather).
+2. Start a chat and choose `/newbot` from the menu.
+3. Provide basic information such as Bot's name and username (naming rules apply).
 
-### Setup Telegram bot
-- Search for BotFather in Telegram or click this link https://t.me/BotFather
-- Hit 'Start', which will give you lot of commands.
-- Hit Menu from the bottom right then choose `/newbot`
-- It will ask you to provdide some basic information such as your Bot's name and user name.
-- There is no restriction on naming your bot.
-- But when you create user name there are restrictions, no special characters, no hyphens and most importantly the user name should end with `bot`.
-- Once you provide those inputs, you will get a API token like `12345678910:ABCDEfghijK..........', keep it safe and do not share it with anyone.
-- Use the below image for illustration purpose. Do not use the same user name.
 ![Botfather](/images/ather-log/botfather.png)
 
 {{< alert info >}}
-lets call this API token as **BOT TOKEN** for time being.
+Refer this API Token as **BOT TOKEN**.
 {{< /alert >}}
 
 ### Setting up Google Sheets
-Save this google sheet in your google drive, by clicking File > Make a copy. https://docs.google.com/spreadsheets/d/1ZsFQ73vUGeLkmdJETfWQeb_HDB673ke0xb2VEZrgZY8/
+Make a copy of this Google Sheet: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1ZsFQ73vUGeLkmdJETfWQeb_HDB673ke0xb2VEZrgZY8/).
 ![google-sheet-make-a-copy](/images/ather-log/google-sheet-make-a-copy.png)
 
 It will ask you to name the file and also highlight that the scripts also will be saved.
 ![google-sheet-make-copy-name](/images/ather-log/google-sheet-make-copy-name.png)
 
 You can rename the sheet the way you want and click 'Make a copy'.  Once the file is saved, you will be able to make edits to the sheet.
-Just go through the file and get a basic understanding.
 
-You need to copy highlighted portion of the URL (excluding the slaches /) and keep it safe for later use.
+
 ![google-sheet-url](/images/ather-log/google-sheet-url.png)
 
 {{< alert info >}}
-lets call this portion as **Spread Sheet ID** for time being.
+Note the highlighted portion of the URL as the **Spread Sheet ID**.
 {{< /alert >}}
 
 ### Setting up Google Drive
 Visit https://drive.google.com/ and create a new folder.
 ![google-drive-new-folder](/images/ather-log/google-drive-new-folder.png)
 
-Give a name something like 'Ride Logs'. Then copy the address bar content as highlighted below and keep it safe.  We will be using it in the next step.
-
+Choose a name, such as 'Ride Logs', and securely save the content from the address bar, as highlighted below. This information will be utilized in the subsequent step.
 ![google-drive-url](/images/ather-log/google-drive-url.png)
 
 {{< alert info >}}
-lets call this portion as **DRIVE ID** for time being.
+We'll refer to this section as the **DRIVE ID**
 {{< /alert >}}
 
 ### Setting up Script
-Click 'Extensions' and 'Apps Script', it will open up a new tab. You will see a window like this.
+Access Google Apps Script via the "Extensions" menu in Google Sheets.
 ![google-app-script-start](/images/ather-log/google-app-script-start.png)
-
-You can rename the 'Ather Ride Log_Demo' to something similar to the name you used for the google sheet. Though it is not mandatory to rename.
-
-You can see the 'Deploy' button on the right. Click 'Deploy' then 'New Deployment'.
+Rename the project to match your sheet's name (optional).
+Deploy the script, authorizing necessary permissions.
 ![script-deploy-button](/images/ather-log/script-deploy-button.png)
 
 You will get a pop-up like below.  Make sure you select the highlighted poritions. If you make mistakes here, your bot will not work.
@@ -225,6 +218,8 @@ from the top select `getMe` then click Run.  You will get a success message in t
 Now do the same for `setWebhook`.
 ![script-run-set-webhook](/images/ather-log/script-run-set-webhook.png)
 
+Once it is done [Deploy It Again](#deploy-it-again).
+
 {{< alert success >}}
 if you are getting a result as 'ok: true' then, you have followed the steps without any mistakes.
 {{< /alert >}}
@@ -255,12 +250,13 @@ Now go back to telegram and send a message `/start`. You should be getting a wel
 You have setup this properly if you have set it up properly. If it is not working follow step [Deploy It Again](#deploy-it-again).
 {{< /alert >}}
 
-## Usage
+
+### Usage
 1. You can clear the contents from 'Data' sheet from row no.2 onwards.
 2. Do not delete the titles.
 3. Do not make any changes on the other sheets, unless you know what you are doing.
-4. share the ride log image which comes with the scooter image to the Telegram bot, you will get a response that the image is being processed.
-5. Then the script will extract the data and put it in the 'Data' sheet.
+4. Share the ride log image with the Telegram bot.
+5. The script extracts and populates data in the 'Data' sheet.
 ![ride-log-sample](/images/ather-log/ride-log-sample.jpeg)
 
 ### Telegram bot menu
@@ -293,24 +289,19 @@ Choosing menu and relevant buttons will bring charts for analysis.
 ![telegram-charts](/images/ather-log/telegram-charts.jpeg)
 
 ### Sample Charts
-Some sample charts are given below:
-![sample-chart-1](/images/ather-log/sample-chart-1.jpeg)
-![sample-chart-2](/images/ather-log/sample-chart-2.jpeg)
-![sample-chart-3](/images/ather-log/sample-chart-3.jpeg)
-![sample-chart-4](/images/ather-log/sample-chart-4.jpeg)
+Here are some sample charts:
+- Distance vs. Range: ![Sample Chart 1](/images/ather-log/sample-chart-1.jpeg)
+- Distance vs. Efficiency: ![Sample Chart 2](/images/ather-log/sample-chart-2.jpeg)
+- Distance vs. Battery % per Km: ![Sample Chart 3](/images/ather-log/sample-chart-3.jpeg)
+- Daily battery usage in %: ![Sample Chart 4](/images/ather-log/sample-chart-4.jpeg)
 
+## Important Notes
+1. The script will process data extracted from the ride log image; if the source is incorrect the result also will be incorrect.
+2. Ather's average speed calculation differs from the script due to how stop time is handled. I feel the calculation on Ather's side also incorrect.
+3. This data is intended for educational use only.
+4. The script's security vulnerabilities were checked, but use at your own risk.
+5. This data shouldn't be used for legal or official purposes.
+6. The code can be modified, enhanced, redistributed, or sold.
+7. The project is provided to support the community, without expectations of monetary gain.
 
-## Important Things to Note
-Few important things to note,
-1. Whatever the data that comes out of the ride log image, the data would be populated.
-2. If the ride log itself is incorrect, the script will not correct by itself.
-3. The Average speed calculation will not match with the ride log vs. the google sheets.
-4. Ather calculates the average speed by taking only the ride time, but the log shows the stop time as well.
-5. All these data to be used for educational purpose only. I have tried my best to make it accurate, I hold no responsible if it is incorrect.
-6. I have tested the outcome and hope no security vularabilities are present in the code. Feel free to reach-out to me, if there are any.
-6. This data should not be used for any legal or other purposes.
-7. I give all rights to whoever wants to modify, enhance, redistribute, sell this program.
-8. I'm not expecting any monitory benefit, this is built only to support the community.
-
-For any clarification reach out to me in this [telegram channel](https://t.me/ather_india).
-I would respond when I am free; no immediate support guarandeed.
+For questions, contact me on this [Telegram channel](https://t.me/ather_india). I'll respond when available, but immediate support isn't guaranteed.
