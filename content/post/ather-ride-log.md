@@ -87,7 +87,7 @@ Refer this API Token as **BOT TOKEN**.
 {{< /alert >}}
 
 ### Setting up Google Sheets
-Make a copy of this Google Sheet: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1ZsFQ73vUGeLkmdJETfWQeb_HDB673ke0xb2VEZrgZY8/).
+Make a copy of this Google Sheet: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1dfx_kQSugj3TurJ-jAW5AT2xBzuTVgf6ZCAurRYmihU).
 ![google-sheet-make-a-copy](/images/ather-log/google-sheet-make-a-copy.png)
 
 It will ask you to name the file and also highlight that the scripts also will be saved.
@@ -168,16 +168,40 @@ Create the following Script Properties. To avoid spell error, copy and paste.
 
 ```ADMIN
 ALLOWED_USER_IDS
-DRIVE_FOLDER_ID
 SSID
+DRIVE_FOLDER_ID
+DOC_ID
+SLIDE_ID
 WEBHOOK_URL
 bot_token
+GROUP_CHECK
+GROUP_ID
+DRIVE_ID_USER_DATA
+LOG
+RUN_DATE_UPDATED
+RUN_TIME_COUNT
+RUN_TIME_MSEC
+
 ```
-for time being update the `ADMIN` and `ALLOWED_USER_IDS` as `NA`.
-`DRIVE_FOLDER_ID` should be updated with DRIVE ID, which we have taken from the Google Drive URL.
-`SSID` should be updated with the SPREAD SHEET ID, which we have taken from the Google Sheets URL.
-`WEBHOOK_URL` should be updated with the WEBHOOK, which we have got it after deploying the script.
-`bot_token` should be updated with BOT TOKEN, which we have got it from BotFather.
+The suggested values to be set on the Script Properties.
+
+| Variable / Property | Value                                                             | Remarks                                                    |
+| :------------------ | :---------------------------------------------------------------- | :----------------------------------------------------------|
+| ADMIN               | Your Telegram ID                                                  | A numeric Value. Explained in later part how to get this.  |
+| ALLOWED_USER_IDS    | Your Telegram ID, If you want someone else to access your bot     | A numeric Value. Explained in later part how to get this.  |
+| SSID                | ID of the sample google sheet after making a copy                 | Get it from Address bar. Only the ID not the URL           |
+| DRIVE_FOLDER_ID     | Create a folder in Google Drive and update the ID here            | Get it from Address bar. Only the ID not the URL           |
+| DOC_ID              | Create a Doc file in Google Drive and update the ID here          | Get it from Address bar. Only the ID not the URL           |
+| SLIDE_ID            | Create a slide from Google Drive and update the ID here           | Get it from Address bar. Only the ID not the URL           |
+| WEBHOOK_URL         | Read the instructions from blog post                              | Keep it safe, do not share it with anyone.                 |
+| bot_token           | Your telegram bot token form BotFather                            | Keep it safe, don't share it withanyone.                   |
+| GROUP_CHECK         | false                                                             | Not required if you are not mainting a group               |
+| GROUP_ID            | NA                                                                | Not required if you are not mainting a group               |
+| DRIVE_ID_USER_DATA  | NA                                                                | Not required if you are not mainting a group               |
+| LOG                 | false                                                             | It will fill up the sheets, used only for debugging purpose|
+| RUN_DATE_UPDATED    | 0                                                                 | This will get updated automatically                        |
+| RUN_TIME_COUNT      | 0                                                                 | This will get updated automatically                        |
+| RUN_TIME_MSEC       | 0                                                                 | This will get updated automatically                        |
 
 It should look like the below picture.
 ![script-properties-list](/images/ather-log/script-properties-list.png)
