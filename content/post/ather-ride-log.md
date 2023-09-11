@@ -166,7 +166,8 @@ This portion is very important. If anything missed out, the whole process might 
 
 Create the following Script Properties. To avoid spell error, copy and paste.
 
-```ADMIN
+```
+ADMIN
 ALLOWED_USER_IDS
 SSID
 DRIVE_FOLDER_ID
